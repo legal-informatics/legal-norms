@@ -1,0 +1,1782 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:norms="http://informatika.ftn.uns.ac.rs/legal/norms.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns="http://informatika.ftn.uns.ac.rs/legal/privacy.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://informatika.ftn.uns.ac.rs/legal/privacy.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://informatika.ftn.uns.ac.rs/legal/norms.owl#"/>
+  </owl:Ontology>
+  <norms:Obligation rdf:ID="CorrectionAndAmendment_o">
+    <norms:isElement>
+      <norms:LegalRelation rdf:ID="CorrectionAndAmendment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Исправка и допуна</rdfs:label>
+        <norms:isRegulated>
+          <norms:LegalNorm rdf:ID="art22-it1">
+            <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2008-10-23</norms:enteredIntoForceOn>
+            <norms:regulates rdf:resource="#CorrectionAndAmendment"/>
+            <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+            >2008-10-23</norms:effectiveOn>
+            <norms:implements>
+              <norms:Policy rdf:ID="ProtectionOfPrivacy">
+                <norms:isImplemented>
+                  <norms:LegalNorm rdf:ID="art20">
+                    <norms:hasElement>
+                      <norms:Exception rdf:ID="art19_ex">
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt4-p1</norms:asXML>
+                        <norms:isElement rdf:resource="#art20"/>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt7-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt9-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt2-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt6-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt1-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt3-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt5-p1</norms:asXML>
+                        <norms:isElement>
+                          <norms:LegalNorm rdf:ID="art21-it1">
+                            <norms:enteredIntoForceOn rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#date"
+                            >2008-10-23</norms:enteredIntoForceOn>
+                            <norms:hasElement rdf:resource="#art19_ex"/>
+                            <norms:hasElement>
+                              <norms:CategoricalDisposition rdf:ID="art21-it1_d">
+                                <norms:isElement rdf:resource="#art21-it1"/>
+                                <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art21-it1-p1</norms:asXML>
+                              </norms:CategoricalDisposition>
+                            </norms:hasElement>
+                            <norms:isPart>
+                              <norms:LegalInstitution rdf:ID="Privacy">
+                                <norms:hasPart>
+                                  <norms:LegalNorm rdf:ID="art29">
+                                    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                    <norms:formulats>
+                                      <norms:Law rdf:ID="PrivacyLaw">
+                                        <norms:contains>
+                                          <norms:LegalNorm rdf:ID="art45">
+                                            <norms:hasElement>
+                                              <norms:Exception rdf:ID="art45_ex">
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it2-p1</norms:asXML>
+                                                <norms:isElement rdf:resource="#art45"/>
+                                              </norms:Exception>
+                                            </norms:hasElement>
+                                            <norms:hasElement>
+                                              <norms:DiscretionaryDisposition rdf:ID="art45_d">
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt3-p1</norms:asXML>
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt1-p1</norms:asXML>
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-p1</norms:asXML>
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt2-p1</norms:asXML>
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt4-p1</norms:asXML>
+                                                <norms:isElement rdf:resource="#art45"/>
+                                              </norms:DiscretionaryDisposition>
+                                            </norms:hasElement>
+                                            <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                            <norms:enteredIntoForceOn
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                            >2008-10-23</norms:enteredIntoForceOn>
+                                            <norms:regulates>
+                                              <norms:LegalRelation rdf:ID="AccessAndInspection">
+                                                <norms:hasElement>
+                                                  <norms:Obligation rdf:ID="AccessAndInspection_o">
+                                                    <norms:isElement rdf:resource="#AccessAndInspection"/>
+                                                    <norms:isBeingHad>
+                                                      <norms:LegalSubject rdf:ID="Handler">
+                                                        <norms:has rdf:resource="#CorrectionAndAmendment_o"/>
+                                                        <norms:has>
+                                                          <norms:Right rdf:ID="ProcessingOfSensitiveData_r">
+                                                            <norms:allocates>
+                                                              <norms:LegalObject rdf:ID="SensitiveData">
+    <norms:isAllocated rdf:resource="#ProcessingOfSensitiveData_r"/>
+    <norms:isAllocated>
+      <norms:Obligation rdf:ID="ProcessingOfSensitiveData_o">
+        <norms:allocates rdf:resource="#SensitiveData"/>
+        <norms:isBeingHad>
+          <norms:LegalSubject rdf:ID="NaturalPerson">
+            <norms:has>
+              <norms:Right rdf:ID="Protection_r">
+                <norms:allocates>
+                  <norms:LegalObject rdf:ID="Data">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Подаци о личности</rdfs:label>
+                    <norms:isAllocated>
+                      <norms:Right rdf:ID="Decision_r">
+                        <norms:isElement>
+                          <norms:LegalRelation rdf:ID="Decision">
+                            <norms:specializes>
+                              <norms:LegalRelation rdf:ID="LegalRelation">
+                                <norms:generalizes>
+                                  <norms:LegalRelation rdf:ID="Protection">
+                                    <norms:isRegulated>
+                                      <norms:LegalNorm rdf:ID="art47">
+                                        <norms:isPart rdf:resource="#Privacy"/>
+                                        <norms:effectiveOn rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#date"
+                                        >2008-10-23</norms:effectiveOn>
+                                        <norms:enteredIntoForceOn
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                        >2008-10-23</norms:enteredIntoForceOn>
+                                        <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                        <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                        <norms:hasElement>
+                                          <norms:CategoricalSanction rdf:ID="art57_s">
+                                            <norms:isElement>
+                                              <norms:LegalNorm rdf:ID="art53">
+                                                <norms:isPart rdf:resource="#Privacy"/>
+                                                <norms:hasElement rdf:resource="#art57_s"/>
+                                                <norms:enteredIntoForceOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:enteredIntoForceOn>
+                                                <norms:hasElement>
+                                                  <norms:Exception rdf:ID="art53_ex">
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art53-it2-p1</norms:asXML>
+                                                    <norms:isElement rdf:resource="#art53"/>
+                                                  </norms:Exception>
+                                                </norms:hasElement>
+                                                <norms:effectiveOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:effectiveOn>
+                                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                                <norms:hasElement>
+                                                  <norms:CategoricalDisposition rdf:ID="art53_d">
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art53-it1-p1</norms:asXML>
+                                                    <norms:isElement rdf:resource="#art53"/>
+                                                  </norms:CategoricalDisposition>
+                                                </norms:hasElement>
+                                                <norms:regulates>
+                                                  <norms:LegalRelation rdf:ID="Export">
+                                                    <norms:specializes rdf:resource="#LegalRelation"/>
+                                                    <norms:hasElement>
+                                                      <norms:Obligation rdf:ID="Export_o">
+                                                        <norms:allocates rdf:resource="#Data"/>
+                                                        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                                                        <norms:isElement rdf:resource="#Export"/>
+                                                      </norms:Obligation>
+                                                    </norms:hasElement>
+                                                    <norms:hasElement>
+                                                      <norms:Right rdf:ID="Export_r">
+                                                        <norms:isBeingHad rdf:resource="#Handler"/>
+                                                        <norms:isElement rdf:resource="#Export"/>
+                                                        <norms:allocates rdf:resource="#Data"/>
+                                                      </norms:Right>
+                                                    </norms:hasElement>
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Изношење из Републике Србије</rdfs:label>
+                                                    <norms:isRegulated rdf:resource="#art53"/>
+                                                  </norms:LegalRelation>
+                                                </norms:regulates>
+                                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                              </norms:LegalNorm>
+                                            </norms:isElement>
+                                            <norms:isElement rdf:resource="#art47"/>
+                                            <norms:isElement>
+                                              <norms:LegalNorm rdf:ID="art15">
+                                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                                <norms:enteredIntoForceOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:enteredIntoForceOn>
+                                                <norms:isPart rdf:resource="#Privacy"/>
+                                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                                <norms:hasElement>
+                                                  <norms:DispositionHypothesis rdf:ID="art15_dh">
+                                                    <norms:isElement rdf:resource="#art15"/>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-p1</norms:asXML>
+                                                  </norms:DispositionHypothesis>
+                                                </norms:hasElement>
+                                                <norms:hasElement>
+                                                  <norms:Exception rdf:ID="art15_ex">
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it2-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it3-p1</norms:asXML>
+                                                    <norms:isElement rdf:resource="#art15"/>
+                                                  </norms:Exception>
+                                                </norms:hasElement>
+                                                <norms:hasElement rdf:resource="#art57_s"/>
+                                                <norms:regulates>
+                                                  <norms:LegalRelation rdf:ID="Notification">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Обавештавање о обради</rdfs:label>
+                                                    <norms:hasElement>
+                                                      <norms:Obligation rdf:ID="Notification_o">
+                                                        <norms:isElement rdf:resource="#Notification"/>
+                                                        <norms:isBeingHad rdf:resource="#Handler"/>
+                                                        <norms:allocates rdf:resource="#Data"/>
+                                                      </norms:Obligation>
+                                                    </norms:hasElement>
+                                                    <norms:hasElement>
+                                                      <norms:Right rdf:ID="Notification_r">
+                                                        <norms:allocates rdf:resource="#Data"/>
+                                                        <norms:isElement rdf:resource="#Notification"/>
+                                                        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                                                      </norms:Right>
+                                                    </norms:hasElement>
+                                                    <norms:specializes rdf:resource="#LegalRelation"/>
+                                                    <norms:isRegulated>
+                                                      <norms:LegalNorm rdf:ID="art19">
+                                                        <norms:effectiveOn
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >2008-10-23</norms:effectiveOn>
+                                                        <norms:regulates rdf:resource="#Notification"/>
+                                                        <norms:isPart rdf:resource="#Privacy"/>
+                                                        <norms:hasElement rdf:resource="#art19_ex"/>
+                                                        <norms:hasElement>
+                                                          <norms:CategoricalDisposition rdf:ID="art19_d">
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt13-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt12-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt10-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt9-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt8-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt6-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt2-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt3-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt7-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt1-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt4-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt15-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt5-p1</norms:asXML>
+                                                            <norms:isElement rdf:resource="#art19"/>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt11-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-p1</norms:asXML>
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt14-p1</norms:asXML>
+                                                          </norms:CategoricalDisposition>
+                                                        </norms:hasElement>
+                                                        <norms:enteredIntoForceOn
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >2008-10-23</norms:enteredIntoForceOn>
+                                                        <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                                        <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                                      </norms:LegalNorm>
+                                                    </norms:isRegulated>
+                                                    <norms:isRegulated rdf:resource="#art15"/>
+                                                  </norms:LegalRelation>
+                                                </norms:regulates>
+                                                <norms:hasElement>
+                                                  <norms:CategoricalDisposition rdf:ID="art15_d">
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt6-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt8-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt4-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-p2</norms:asXML>
+                                                    <norms:isElement rdf:resource="#art15"/>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt2-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt5-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt7-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt1-p1</norms:asXML>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt3-p1</norms:asXML>
+                                                  </norms:CategoricalDisposition>
+                                                </norms:hasElement>
+                                                <norms:effectiveOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:effectiveOn>
+                                              </norms:LegalNorm>
+                                            </norms:isElement>
+                                            <norms:isElement>
+                                              <norms:LegalNorm rdf:ID="art16-it1">
+                                                <norms:isPart rdf:resource="#Privacy"/>
+                                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                                <norms:hasElement>
+                                                  <norms:Exception rdf:ID="art16-it1_ex">
+                                                    <norms:isElement rdf:resource="#art16-it1"/>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it2-p1</norms:asXML>
+                                                  </norms:Exception>
+                                                </norms:hasElement>
+                                                <norms:regulates>
+                                                  <norms:LegalRelation rdf:ID="ProcessingOfSensitiveData">
+                                                    <norms:isRegulated>
+                                                      <norms:LegalNorm rdf:ID="art16-it3">
+                                                        <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                                        <norms:hasElement>
+                                                          <norms:DispositionHypothesis rdf:ID="art16-it3_dh">
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it2-p2</norms:asXML>
+                                                            <norms:isElement rdf:resource="#art16-it3"/>
+                                                          </norms:DispositionHypothesis>
+                                                        </norms:hasElement>
+                                                        <norms:hasElement>
+                                                          <norms:CategoricalDisposition rdf:ID="art16-it3_d">
+                                                            <norms:asXML
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it3-p1</norms:asXML>
+                                                            <norms:isElement rdf:resource="#art16-it3"/>
+                                                          </norms:CategoricalDisposition>
+                                                        </norms:hasElement>
+                                                        <norms:isPart rdf:resource="#Privacy"/>
+                                                        <norms:enteredIntoForceOn
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >2008-10-23</norms:enteredIntoForceOn>
+                                                        <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                                        <norms:regulates rdf:resource="#ProcessingOfSensitiveData"/>
+                                                        <norms:effectiveOn
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#date"
+                                                        >2008-10-23</norms:effectiveOn>
+                                                      </norms:LegalNorm>
+                                                    </norms:isRegulated>
+                                                    <norms:isRegulated rdf:resource="#art16-it1"/>
+                                                    <norms:hasElement rdf:resource="#ProcessingOfSensitiveData_o"/>
+                                                    <norms:hasElement rdf:resource="#ProcessingOfSensitiveData_r"/>
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Обрада нарочито осетљивих података</rdfs:label>
+                                                    <norms:specializes>
+                                                      <norms:LegalRelation rdf:ID="Processing">
+                                                        <norms:generalizes>
+                                                          <norms:LegalRelation rdf:ID="Collection">
+                                                            <norms:hasElement>
+                                                              <norms:Obligation rdf:ID="Collection_o">
+    <norms:isElement rdf:resource="#Collection"/>
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#NaturalPerson"/>         </norms:Obligation>
+                                                            </norms:hasElement>
+                                                            <norms:hasElement>
+                                                              <norms:Right rdf:ID="Collection_r">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#Handler"/>
+    <norms:isElement rdf:resource="#Collection"/>             </norms:Right>
+                                                            </norms:hasElement>
+                                                            <norms:generalizes>
+                                                              <norms:LegalRelation rdf:ID="Inspection">
+    <norms:specializes rdf:resource="#Collection"/>
+    <norms:isRegulated rdf:resource="#art20"/>
+    <norms:hasElement>
+      <norms:Obligation rdf:ID="Inspection_o">
+        <norms:isBeingHad rdf:resource="#Handler"/>
+        <norms:isElement rdf:resource="#Inspection"/>
+        <norms:allocates rdf:resource="#Data"/>
+      </norms:Obligation>
+    </norms:hasElement>
+    <norms:hasElement>
+      <norms:Right rdf:ID="Inspection_r">
+        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+        <norms:isElement rdf:resource="#Inspection"/>
+        <norms:allocates rdf:resource="#Data"/>
+      </norms:Right>
+    </norms:hasElement>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Увид</rdfs:label>                                        </norms:LegalRelation>
+                                                            </norms:generalizes>
+                                                            <norms:generalizes>
+                                                              <norms:LegalRelation rdf:ID="CollectionFromStateAgency">
+    <norms:isRegulated>
+      <norms:LegalNorm rdf:ID="art14-it1">
+        <norms:hasElement>
+          <norms:CategoricalDisposition rdf:ID="art14-it1_d">
+            <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it1-p1</norms:asXML>
+            <norms:isElement rdf:resource="#art14-it1"/>
+          </norms:CategoricalDisposition>
+        </norms:hasElement>
+        <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+        <norms:formulats rdf:resource="#PrivacyLaw"/>
+        <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2008-10-23</norms:effectiveOn>
+        <norms:regulates rdf:resource="#CollectionFromStateAgency"/>
+        <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2008-10-23</norms:enteredIntoForceOn>
+        <norms:isPart rdf:resource="#Privacy"/>
+      </norms:LegalNorm>
+    </norms:isRegulated>
+    <norms:hasElement>
+      <norms:Obligation rdf:ID="CollectionFromStateAgency_o">
+        <norms:isElement rdf:resource="#CollectionFromStateAgency"/>
+        <norms:allocates rdf:resource="#Data"/>
+        <norms:isBeingHad>
+          <norms:LegalSubject rdf:ID="AuthorizedStateAgency">
+            <norms:specializes>
+              <norms:LegalSubject rdf:ID="StateAgency">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Државни орган</rdfs:label>
+                <norms:has>
+                  <norms:Competence rdf:ID="ProcessingByStateAgency_c">
+                    <norms:isElement>
+                      <norms:LegalRelation rdf:ID="ProcessingByStateAgency">
+                        <norms:isRegulated>
+                          <norms:LegalNorm rdf:ID="art13">
+                            <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                            <norms:hasElement>
+                              <norms:CategoricalDisposition rdf:ID="art13_d">
+                                <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art13-it1-p1</norms:asXML>
+                                <norms:isElement rdf:resource="#art13"/>
+                              </norms:CategoricalDisposition>
+                            </norms:hasElement>
+                            <norms:formulats rdf:resource="#PrivacyLaw"/>
+                            <norms:enteredIntoForceOn rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#date"
+                            >2008-10-23</norms:enteredIntoForceOn>
+                            <norms:regulates rdf:resource="#ProcessingByStateAgency"/>
+                            <norms:isPart rdf:resource="#Privacy"/>
+                            <norms:hasElement>
+                              <norms:DispositionHypothesis rdf:ID="art13_dh">
+                                <norms:isElement rdf:resource="#art13"/>
+                                <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art13-it1-p2</norms:asXML>
+                              </norms:DispositionHypothesis>
+                            </norms:hasElement>
+                            <norms:hasElement rdf:resource="#art57_s"/>
+                            <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                            >2008-10-23</norms:effectiveOn>
+                          </norms:LegalNorm>
+                        </norms:isRegulated>
+                        <norms:specializes rdf:resource="#Processing"/>
+                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Обрада од стране органа власти</rdfs:label>
+                        <norms:hasElement>
+                          <norms:Obligation rdf:ID="ProcessingByStateAgency_o">
+                            <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                            <norms:allocates rdf:resource="#Data"/>
+                            <norms:isElement rdf:resource="#ProcessingByStateAgency"/>
+                          </norms:Obligation>
+                        </norms:hasElement>
+                        <norms:hasElement rdf:resource="#ProcessingByStateAgency_c"/>
+                      </norms:LegalRelation>
+                    </norms:isElement>
+                    <norms:isBeingHad rdf:resource="#StateAgency"/>
+                    <norms:allocates rdf:resource="#Data"/>
+                  </norms:Competence>
+                </norms:has>
+                <norms:generalizes rdf:resource="#AuthorizedStateAgency"/>
+                <norms:generalizes>
+                  <norms:LegalSubject rdf:ID="PresidentOfSerbia">
+                    <norms:promulgates rdf:resource="#PrivacyLaw"/>
+                    <norms:specializes rdf:resource="#StateAgency"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Председник Републике Србије</rdfs:label>
+                  </norms:LegalSubject>
+                </norms:generalizes>
+                <norms:generalizes>
+                  <norms:LegalSubject rdf:ID="ParliamentOfVojvodina">
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Скупштина АПВ</rdfs:label>
+                    <norms:specializes rdf:resource="#StateAgency"/>
+                  </norms:LegalSubject>
+                </norms:generalizes>
+                <norms:generalizes>
+                  <norms:LegalSubject rdf:ID="ParliamentOfSerbia">
+                    <norms:promulgates>
+                      <norms:Constitution rdf:ID="Constitution">
+                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Устав Републике Србије</rdfs:label>
+                        <norms:isEnacted rdf:resource="#ParliamentOfSerbia"/>
+                        <norms:isPublished>
+                          <norms:Gazette rdf:ID="Gazette98-06">
+                            <norms:publishes rdf:resource="#Constitution"/>
+                            <norms:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                            >2006</norms:volume>
+                            <norms:number rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                            >98</norms:number>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >"Службени гласник РС", бр. 98/06</rdfs:label>
+                          </norms:Gazette>
+                        </norms:isPublished>
+                        <norms:promulgatedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                        >2006-11-08</norms:promulgatedOn>
+                        <norms:publishedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                        >2006-11-10</norms:publishedOn>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik</norms:asXML>
+                        <norms:enactedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                        >2006-11-08</norms:enactedOn>
+                        <norms:isPromulgated rdf:resource="#ParliamentOfSerbia"/>
+                      </norms:Constitution>
+                    </norms:promulgates>
+                    <norms:enacts rdf:resource="#PrivacyLaw"/>
+                    <norms:enacts rdf:resource="#Constitution"/>
+                    <norms:specializes rdf:resource="#StateAgency"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Народна скупштина Републике Србије</rdfs:label>
+                  </norms:LegalSubject>
+                </norms:generalizes>
+                <norms:generalizes>
+                  <norms:LegalSubject rdf:ID="Commissioner">
+                    <norms:specializes rdf:resource="#StateAgency"/>
+                    <norms:enacts>
+                      <norms:Bylaw rdf:ID="Bylaw2">
+                        <norms:publishedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                        >2009-05-12</norms:publishedOn>
+                        <norms:isEnacted rdf:resource="#Commissioner"/>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik</norms:asXML>
+                        <norms:isPublished>
+                          <norms:Gazette rdf:ID="Gazette35-09">
+                            <norms:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                            >2009</norms:volume>
+                            <norms:number rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                            >35</norms:number>
+                            <norms:publishes rdf:resource="#Bylaw2"/>
+                            <norms:publishes>
+                              <norms:Bylaw rdf:ID="Bylaw1">
+                                <norms:isEnacted rdf:resource="#Commissioner"/>
+                                <norms:enactedOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2009-04-14</norms:enactedOn>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >Правилник о начину претходне провере радњи обраде података о личности</rdfs:label>
+                                <norms:publishedOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2009-05-12</norms:publishedOn>
+                                <norms:isPublished rdf:resource="#Gazette35-09"/>
+                                <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                >urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik</norms:asXML>
+                              </norms:Bylaw>
+                            </norms:publishes>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >"Службени гласник РС", бр. 35/09</rdfs:label>
+                          </norms:Gazette>
+                        </norms:isPublished>
+                        <norms:enactedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                        >2009-04-21</norms:enactedOn>
+                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Правилник о обрасцу легитимације овлашћеног лица за вршење надзора по Законо о заштити података о личности</rdfs:label>
+                      </norms:Bylaw>
+                    </norms:enacts>
+                    <norms:enacts rdf:resource="#Bylaw1"/>
+                    <norms:has>
+                      <norms:Obligation rdf:ID="ProtectionOfSecrecy_o">
+                        <norms:allocates rdf:resource="#Data"/>
+                        <norms:isElement>
+                          <norms:LegalRelation rdf:ID="ProtectionOfSecrecy">
+                            <norms:isRegulated>
+                              <norms:LegalNorm rdf:ID="art46-it1">
+                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                <norms:enteredIntoForceOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:enteredIntoForceOn>
+                                <norms:isPart rdf:resource="#Privacy"/>
+                                <norms:effectiveOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:effectiveOn>
+                                <norms:regulates rdf:resource="#ProtectionOfSecrecy"/>
+                                <norms:hasElement rdf:resource="#art57_s"/>
+                                <norms:hasElement>
+                                  <norms:CategoricalDisposition rdf:ID="art46-it1_d">
+                                    <norms:isElement rdf:resource="#art46-it1"/>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art46-it1-p1</norms:asXML>
+                                  </norms:CategoricalDisposition>
+                                </norms:hasElement>
+                              </norms:LegalNorm>
+                            </norms:isRegulated>
+                            <norms:hasElement>
+                              <norms:Right rdf:ID="ProtectionOfSecrecy_r">
+                                <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                                <norms:allocates rdf:resource="#Data"/>
+                                <norms:isElement rdf:resource="#ProtectionOfSecrecy"/>
+                              </norms:Right>
+                            </norms:hasElement>
+                            <norms:hasElement rdf:resource="#ProtectionOfSecrecy_o"/>
+                            <norms:specializes rdf:resource="#LegalRelation"/>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Заштита тајности</rdfs:label>
+                          </norms:LegalRelation>
+                        </norms:isElement>
+                        <norms:isBeingHad rdf:resource="#Commissioner"/>
+                      </norms:Obligation>
+                    </norms:has>
+                    <norms:has>
+                      <norms:Competence rdf:ID="MakingRecord_c">
+                        <norms:isElement>
+                          <norms:LegalRelation rdf:ID="MakingRecord">
+                            <norms:specializes rdf:resource="#LegalRelation"/>
+                            <norms:isRegulated>
+                              <norms:LegalNorm rdf:ID="art48">
+                                <norms:isPart rdf:resource="#Privacy"/>
+                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                <norms:regulates rdf:resource="#MakingRecord"/>
+                                <norms:enteredIntoForceOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:enteredIntoForceOn>
+                                <norms:hasElement rdf:resource="#art57_s"/>
+                                <norms:hasElement>
+                                  <norms:CategoricalDisposition rdf:ID="art48_d">
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt14-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt13-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt10-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt9-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt1-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt11-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt7-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt3-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt6-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt4-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt2-p1</norms:asXML>
+                                    <norms:isElement rdf:resource="#art48"/>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt5-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt12-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt8-p1</norms:asXML>
+                                  </norms:CategoricalDisposition>
+                                </norms:hasElement>
+                                <norms:hasElement>
+                                  <norms:Exception rdf:ID="art48_ex">
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-p1</norms:asXML>
+                                    <norms:isElement rdf:resource="#art48"/>
+                                  </norms:Exception>
+                                </norms:hasElement>
+                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                <norms:effectiveOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:effectiveOn>
+                              </norms:LegalNorm>
+                            </norms:isRegulated>
+                            <norms:hasElement rdf:resource="#MakingRecord_c"/>
+                            <norms:hasElement>
+                              <norms:Obligation rdf:ID="MakingRecord_o">
+                                <norms:isBeingHad rdf:resource="#Handler"/>
+                                <norms:isElement rdf:resource="#MakingRecord"/>
+                                <norms:allocates>
+                                  <norms:LegalObject rdf:ID="Registry">
+                                    <norms:generalizes>
+                                      <norms:LegalObject rdf:ID="CentralRegistry">
+                                        <norms:specializes rdf:resource="#Registry"/>
+                                        <rdfs:label rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >Централни регистар података</rdfs:label>
+                                      </norms:LegalObject>
+                                    </norms:generalizes>
+                                    <rdfs:label rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >Регистар података</rdfs:label>
+                                    <norms:specializes>
+                                      <norms:LegalObject rdf:ID="LegalObject">
+                                        <norms:generalizes>
+                                          <norms:LegalObject rdf:ID="Directory">
+                                            <norms:specializes rdf:resource="#LegalObject"/>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Збирка података</rdfs:label>
+                                          </norms:LegalObject>
+                                        </norms:generalizes>
+                                        <norms:generalizes rdf:resource="#Data"/>
+                                        <norms:generalizes rdf:resource="#Registry"/>
+                                        <norms:isAllocated>
+                                          <norms:Right rdf:ID="Right">
+                                            <norms:isBeingHad>
+                                              <norms:LegalSubject rdf:ID="LegalSubject">
+                                                <norms:generalizes rdf:resource="#NaturalPerson"/>
+                                                <norms:generalizes>
+                                                  <norms:LegalSubject rdf:ID="LegalPerson">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Правно лице</rdfs:label>
+                                                    <norms:generalizes rdf:resource="#StateAgency"/>
+                                                    <norms:specializes rdf:resource="#LegalSubject"/>
+                                                  </norms:LegalSubject>
+                                                </norms:generalizes>
+                                                <norms:generalizes>
+                                                  <norms:LegalSubject rdf:ID="Processor">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Обрађивач</rdfs:label>
+                                                    <norms:specializes rdf:resource="#LegalSubject"/>
+                                                  </norms:LegalSubject>
+                                                </norms:generalizes>
+                                                <norms:generalizes rdf:resource="#Handler"/>
+                                                <norms:generalizes>
+                                                  <norms:LegalSubject rdf:ID="User">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Корисник</rdfs:label>
+                                                    <norms:specializes rdf:resource="#LegalSubject"/>
+                                                  </norms:LegalSubject>
+                                                </norms:generalizes>
+                                                <norms:has rdf:resource="#Right"/>
+                                                <norms:has>
+                                                  <norms:Prohibition rdf:ID="Decision_p">
+                                                    <norms:isBeingHad rdf:resource="#LegalSubject"/>
+                                                    <norms:isElement rdf:resource="#Decision"/>
+                                                    <norms:allocates rdf:resource="#Data"/>
+                                                  </norms:Prohibition>
+                                                </norms:has>
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Правни субјект</rdfs:label>
+                                                <norms:has>
+                                                  <norms:Duty rdf:ID="Duty">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    ></rdfs:label>
+                                                    <norms:isBeingHad rdf:resource="#LegalSubject"/>
+                                                    <norms:isElement rdf:resource="#LegalRelation"/>
+                                                    <norms:allocates rdf:resource="#LegalObject"/>
+                                                  </norms:Duty>
+                                                </norms:has>
+                                              </norms:LegalSubject>
+                                            </norms:isBeingHad>
+                                            <norms:allocates rdf:resource="#LegalObject"/>
+                                            <norms:isElement rdf:resource="#LegalRelation"/>
+                                          </norms:Right>
+                                        </norms:isAllocated>
+                                        <norms:isAllocated rdf:resource="#Duty"/>
+                                        <rdfs:label rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >Правни објект</rdfs:label>
+                                      </norms:LegalObject>
+                                    </norms:specializes>
+                                    <norms:isAllocated rdf:resource="#MakingRecord_c"/>
+                                    <norms:isAllocated rdf:resource="#MakingRecord_o"/>
+                                  </norms:LegalObject>
+                                </norms:allocates>
+                              </norms:Obligation>
+                            </norms:hasElement>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Евиденција о обради</rdfs:label>
+                          </norms:LegalRelation>
+                        </norms:isElement>
+                        <norms:isBeingHad rdf:resource="#Commissioner"/>
+                        <norms:allocates rdf:resource="#Registry"/>
+                      </norms:Competence>
+                    </norms:has>
+                    <norms:has>
+                      <norms:Competence rdf:ID="AccessAndInspection_c">
+                        <norms:isElement rdf:resource="#AccessAndInspection"/>
+                        <norms:isBeingHad rdf:resource="#Commissioner"/>
+                        <norms:allocates rdf:resource="#Data"/>
+                      </norms:Competence>
+                    </norms:has>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Повереник за информације од јавног значаја и заштиту података о личности</rdfs:label>
+                  </norms:LegalSubject>
+                </norms:generalizes>
+                <norms:specializes rdf:resource="#LegalPerson"/>
+              </norms:LegalSubject>
+            </norms:specializes>
+            <norms:has rdf:resource="#CollectionFromStateAgency_o"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Орган овлашћен за прикупљање података</rdfs:label>
+          </norms:LegalSubject>
+        </norms:isBeingHad>
+      </norms:Obligation>
+    </norms:hasElement>
+    <norms:hasElement>
+      <norms:Right rdf:ID="CollectionFromStateAgency_r">
+        <norms:allocates rdf:resource="#Data"/>
+        <norms:isElement rdf:resource="#CollectionFromStateAgency"/>
+        <norms:isBeingHad rdf:resource="#Handler"/>
+      </norms:Right>
+    </norms:hasElement>
+    <norms:specializes rdf:resource="#Collection"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Прикупљање података од овлашћених органа управе</rdfs:label>
+                                                              </norms:LegalRelation>
+                                                            </norms:generalizes>
+                                                            <norms:isRegulated>
+                                                              <norms:LegalNorm rdf:ID="art14-it2">
+    <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:effectiveOn>
+    <norms:isPart rdf:resource="#Privacy"/>
+    <norms:regulates rdf:resource="#Collection"/>
+    <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:enteredIntoForceOn>
+    <norms:hasElement>
+      <norms:CategoricalDisposition rdf:ID="art14-it2_d">
+        <norms:isElement rdf:resource="#art14-it2"/>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-p1</norms:asXML>
+      </norms:CategoricalDisposition>
+    </norms:hasElement>
+    <norms:hasElement>
+      <norms:DispositionHypothesis rdf:ID="art14-it2_dh">
+        <norms:isElement rdf:resource="#art14-it2"/>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt1-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt5-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt3-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt2-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt4-p1</norms:asXML>
+      </norms:DispositionHypothesis>
+    </norms:hasElement>
+    <norms:hasElement rdf:resource="#art57_s"/>
+    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+    <norms:formulats rdf:resource="#PrivacyLaw"/>             </norms:LegalNorm>
+                                                            </norms:isRegulated>
+                                                            <rdfs:label
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Прикупљање</rdfs:label>
+                                                            <norms:specializes rdf:resource="#Processing"/>
+                                                          </norms:LegalRelation>
+                                                        </norms:generalizes>
+                                                        <norms:generalizes rdf:resource="#ProcessingByStateAgency"/>
+                                                        <norms:generalizes rdf:resource="#CorrectionAndAmendment"/>
+                                                        <norms:generalizes>
+                                                          <norms:LegalRelation rdf:ID="Copy">
+                                                            <norms:hasElement>
+                                                              <norms:Obligation rdf:ID="Copy_o">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#Handler"/>
+    <norms:isElement rdf:resource="#Copy"/>                   </norms:Obligation>
+                                                            </norms:hasElement>
+                                                            <norms:hasElement>
+                                                              <norms:Right rdf:ID="Copy_r">
+    <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+    <norms:isElement rdf:resource="#Copy"/>
+    <norms:allocates rdf:resource="#Data"/>                   </norms:Right>
+                                                            </norms:hasElement>
+                                                            <rdfs:label
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Копирање</rdfs:label>
+                                                            <norms:specializes rdf:resource="#Processing"/>
+                                                            <norms:isRegulated rdf:resource="#art21-it1"/>
+                                                          </norms:LegalRelation>
+                                                        </norms:generalizes>
+                                                        <norms:isRegulated rdf:resource="#art29"/>
+                                                        <norms:hasElement>
+                                                          <norms:Prohibition rdf:ID="Processing_p">
+                                                            <norms:allocates rdf:resource="#Data"/>
+                                                            <norms:isElement rdf:resource="#Processing"/>
+                                                            <norms:isBeingHad rdf:resource="#Handler"/>
+                                                          </norms:Prohibition>
+                                                        </norms:hasElement>
+                                                        <rdfs:label
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >Обрада</rdfs:label>
+                                                        <norms:generalizes>
+                                                          <norms:LegalRelation rdf:ID="Suspension">
+                                                            <norms:specializes rdf:resource="#Processing"/>
+                                                            <rdfs:label
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Прекид и привремена обустава обраде</rdfs:label>
+                                                            <norms:isRegulated>
+                                                              <norms:LegalNorm rdf:ID="art22-it3">
+    <norms:isPart rdf:resource="#Privacy"/>
+    <norms:hasElement>
+      <norms:DispositionHypothesis rdf:ID="art22-it3_dh">
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it3-p2</norms:asXML>
+        <norms:isElement rdf:resource="#art22-it3"/>
+      </norms:DispositionHypothesis>
+    </norms:hasElement>
+    <norms:hasElement>
+      <norms:CategoricalDisposition rdf:ID="art22-it3_d">
+        <norms:isElement rdf:resource="#art22-it3"/>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it3-p1</norms:asXML>
+      </norms:CategoricalDisposition>
+    </norms:hasElement>
+    <norms:formulats rdf:resource="#PrivacyLaw"/>
+    <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:effectiveOn>
+    <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:enteredIntoForceOn>
+    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+    <norms:regulates rdf:resource="#Suspension"/>             </norms:LegalNorm>
+                                                            </norms:isRegulated>
+                                                            <norms:hasElement>
+                                                              <norms:Obligation rdf:ID="Suspension_o">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#Handler"/>
+    <norms:isElement rdf:resource="#Suspension"/>             </norms:Obligation>
+                                                            </norms:hasElement>
+                                                            <norms:hasElement>
+                                                              <norms:Right rdf:ID="Suspension_r">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isElement rdf:resource="#Suspension"/>
+    <norms:isBeingHad rdf:resource="#NaturalPerson"/>         </norms:Right>
+                                                            </norms:hasElement>
+                                                          </norms:LegalRelation>
+                                                        </norms:generalizes>
+                                                        <norms:generalizes rdf:resource="#ProcessingOfSensitiveData"/>
+                                                        <norms:specializes rdf:resource="#LegalRelation"/>
+                                                        <norms:hasElement>
+                                                          <norms:Right rdf:ID="Processing_r">
+                                                            <norms:isElement rdf:resource="#Processing"/>
+                                                            <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                                                            <norms:allocates rdf:resource="#Data"/>
+                                                          </norms:Right>
+                                                        </norms:hasElement>
+                                                        <norms:generalizes>
+                                                          <norms:LegalRelation rdf:ID="ProcessingWithoutApproval">
+                                                            <rdfs:label
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Обрада без пристанка</rdfs:label>
+                                                            <norms:specializes rdf:resource="#Processing"/>
+                                                            <norms:hasElement>
+                                                              <norms:Obligation rdf:ID="ProcessingWithoutApproval_o">
+    <norms:isElement rdf:resource="#ProcessingWithoutApproval"/>
+    <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+    <norms:allocates rdf:resource="#Data"/>                   </norms:Obligation>
+                                                            </norms:hasElement>
+                                                            <norms:hasElement>
+                                                              <norms:Right rdf:ID="ProcessingWIthoutApproval_r">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#Handler"/>
+    <norms:isElement rdf:resource="#ProcessingWithoutApproval"/>
+                                                              </norms:Right>
+                                                            </norms:hasElement>
+                                                            <norms:isRegulated>
+                                                              <norms:LegalNorm rdf:ID="art12">
+    <norms:regulates rdf:resource="#ProcessingWithoutApproval"/>
+    <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:enteredIntoForceOn>
+    <norms:isPart rdf:resource="#Privacy"/>
+    <norms:hasElement>
+      <norms:DispositionHypothesis rdf:ID="art12_dh">
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt3-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt1-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt2-p1</norms:asXML>
+        <norms:isElement rdf:resource="#art12"/>
+      </norms:DispositionHypothesis>
+    </norms:hasElement>
+    <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:effectiveOn>
+    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+    <norms:formulats rdf:resource="#PrivacyLaw"/>
+    <norms:hasElement>
+      <norms:CategoricalDisposition rdf:ID="art12_d">
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-p1</norms:asXML>
+        <norms:isElement rdf:resource="#art12"/>
+      </norms:CategoricalDisposition>
+    </norms:hasElement>
+    <norms:hasElement rdf:resource="#art57_s"/>               </norms:LegalNorm>
+                                                            </norms:isRegulated>
+                                                          </norms:LegalRelation>
+                                                        </norms:generalizes>
+                                                        <norms:generalizes>
+                                                          <norms:LegalRelation rdf:ID="Deletion">
+                                                            <rdfs:label
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#string"
+                                                            >Брисање</rdfs:label>
+                                                            <norms:hasElement>
+                                                              <norms:Obligation rdf:ID="Deletion_o">
+    <norms:isBeingHad rdf:resource="#Handler"/>
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isElement rdf:resource="#Deletion"/>               </norms:Obligation>
+                                                            </norms:hasElement>
+                                                            <norms:hasElement>
+                                                              <norms:Right rdf:ID="Deletion_r">
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+    <norms:isElement rdf:resource="#Deletion"/>               </norms:Right>
+                                                            </norms:hasElement>
+                                                            <norms:specializes rdf:resource="#Processing"/>
+                                                            <norms:isRegulated>
+                                                              <norms:LegalNorm rdf:ID="art22-it2">
+    <norms:hasElement>
+      <norms:DispositionHypothesis rdf:ID="art22-it2_dh">
+        <norms:isElement rdf:resource="#art22-it2"/>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt7-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt2-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt4-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt6-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt3-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt1-p1</norms:asXML>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt5-p1</norms:asXML>
+      </norms:DispositionHypothesis>
+    </norms:hasElement>
+    <norms:hasElement>
+      <norms:CategoricalDisposition rdf:ID="art22-it2_d">
+        <norms:isElement rdf:resource="#art22-it2"/>
+        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-p1</norms:asXML>
+      </norms:CategoricalDisposition>
+    </norms:hasElement>
+    <norms:regulates rdf:resource="#Deletion"/>
+    <norms:formulats rdf:resource="#PrivacyLaw"/>
+    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+    <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:effectiveOn>
+    <norms:isPart rdf:resource="#Privacy"/>
+    <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-10-23</norms:enteredIntoForceOn>                    </norms:LegalNorm>
+                                                            </norms:isRegulated>
+                                                          </norms:LegalRelation>
+                                                        </norms:generalizes>
+                                                      </norms:LegalRelation>
+                                                    </norms:specializes>
+                                                  </norms:LegalRelation>
+                                                </norms:regulates>
+                                                <norms:hasElement>
+                                                  <norms:CategoricalDisposition rdf:ID="art16-it1_d">
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it1-p1</norms:asXML>
+                                                    <norms:isElement rdf:resource="#art16-it1"/>
+                                                  </norms:CategoricalDisposition>
+                                                </norms:hasElement>
+                                                <norms:hasElement>
+                                                  <norms:DispositionHypothesis rdf:ID="art16-it1_dh">
+                                                    <norms:isElement rdf:resource="#art16-it1"/>
+                                                    <norms:asXML
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it1-p2</norms:asXML>
+                                                  </norms:DispositionHypothesis>
+                                                </norms:hasElement>
+                                                <norms:effectiveOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:effectiveOn>
+                                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                                <norms:enteredIntoForceOn
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#date"
+                                                >2008-10-23</norms:enteredIntoForceOn>
+                                                <norms:hasElement rdf:resource="#art57_s"/>
+                                              </norms:LegalNorm>
+                                            </norms:isElement>
+                                            <norms:asXML rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art57-it1-p1</norms:asXML>
+                                            <norms:isElement rdf:resource="#art48"/>
+                                            <norms:isElement rdf:resource="#art13"/>
+                                            <norms:isElement rdf:resource="#art12"/>
+                                            <norms:isElement rdf:resource="#art14-it2"/>
+                                            <norms:isElement rdf:resource="#art46-it1"/>
+                                            <norms:asXML rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik</norms:asXML>
+                                            <norms:asXML rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art57-it3-p1</norms:asXML>
+                                          </norms:CategoricalSanction>
+                                        </norms:hasElement>
+                                        <norms:hasElement>
+                                          <norms:CategoricalDisposition rdf:ID="art47_d">
+                                            <norms:asXML rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art47-it2-p1</norms:asXML>
+                                            <norms:asXML rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art47-it1-p1</norms:asXML>
+                                            <norms:isElement rdf:resource="#art47"/>
+                                          </norms:CategoricalDisposition>
+                                        </norms:hasElement>
+                                        <norms:regulates rdf:resource="#Protection"/>
+                                      </norms:LegalNorm>
+                                    </norms:isRegulated>
+                                    <norms:hasElement>
+                                      <norms:Obligation rdf:ID="Protection_o">
+                                        <norms:isBeingHad rdf:resource="#Handler"/>
+                                        <norms:isElement rdf:resource="#Protection"/>
+                                        <norms:allocates rdf:resource="#Data"/>
+                                      </norms:Obligation>
+                                    </norms:hasElement>
+                                    <norms:hasElement rdf:resource="#Protection_r"/>
+                                    <norms:specializes rdf:resource="#LegalRelation"/>
+                                    <rdfs:label rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >Заштита</rdfs:label>
+                                  </norms:LegalRelation>
+                                </norms:generalizes>
+                                <norms:generalizes rdf:resource="#AccessAndInspection"/>
+                                <norms:generalizes rdf:resource="#Export"/>
+                                <norms:hasElement rdf:resource="#Duty"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >Правни однос</rdfs:label>
+                                <norms:generalizes rdf:resource="#Notification"/>
+                                <norms:hasElement rdf:resource="#Right"/>
+                                <norms:generalizes rdf:resource="#Decision"/>
+                                <norms:generalizes rdf:resource="#Processing"/>
+                                <norms:generalizes rdf:resource="#MakingRecord"/>
+                                <norms:generalizes rdf:resource="#ProtectionOfSecrecy"/>
+                              </norms:LegalRelation>
+                            </norms:specializes>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Одлучивање помоћу аутоматизоване обраде</rdfs:label>
+                            <norms:isRegulated>
+                              <norms:LegalNorm rdf:ID="art8">
+                                <norms:regulates rdf:resource="#Decision"/>
+                                <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                <norms:isPart rdf:resource="#Privacy"/>
+                                <norms:hasElement>
+                                  <norms:DispositionHypothesis rdf:ID="art8_dh">
+                                    <norms:isElement rdf:resource="#art8"/>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt2-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt8-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt5-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt3-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt1-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt7-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt4-p1</norms:asXML>
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt6-p1</norms:asXML>
+                                  </norms:DispositionHypothesis>
+                                </norms:hasElement>
+                                <norms:hasElement>
+                                  <norms:CategoricalDisposition rdf:ID="art8_d">
+                                    <norms:asXML rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-p1</norms:asXML>
+                                    <norms:isElement rdf:resource="#art8"/>
+                                  </norms:CategoricalDisposition>
+                                </norms:hasElement>
+                                <norms:enteredIntoForceOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:enteredIntoForceOn>
+                                <norms:effectiveOn rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#date"
+                                >2008-10-23</norms:effectiveOn>
+                              </norms:LegalNorm>
+                            </norms:isRegulated>
+                            <norms:hasElement rdf:resource="#Decision_p"/>
+                            <norms:hasElement rdf:resource="#Decision_r"/>
+                          </norms:LegalRelation>
+                        </norms:isElement>
+                        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                        <norms:allocates rdf:resource="#Data"/>
+                      </norms:Right>
+                    </norms:isAllocated>
+                    <norms:generalizes rdf:resource="#SensitiveData"/>
+                    <norms:isAllocated rdf:resource="#Collection_r"/>
+                    <norms:isAllocated rdf:resource="#CollectionFromStateAgency_r"/>
+                    <norms:isAllocated rdf:resource="#Export_r"/>
+                    <norms:isAllocated rdf:resource="#Processing_p"/>
+                    <norms:isAllocated rdf:resource="#Copy_r"/>
+                    <norms:isAllocated rdf:resource="#CollectionFromStateAgency_o"/>
+                    <norms:isAllocated rdf:resource="#Export_o"/>
+                    <norms:isAllocated rdf:resource="#Protection_o"/>
+                    <norms:isAllocated>
+                      <norms:Right rdf:ID="CorrectionAndAmendment_r">
+                        <norms:allocates rdf:resource="#Data"/>
+                        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                        <norms:isElement rdf:resource="#CorrectionAndAmendment"/>
+                      </norms:Right>
+                    </norms:isAllocated>
+                    <norms:isAllocated rdf:resource="#Suspension_o"/>
+                    <norms:isAllocated rdf:resource="#Inspection_r"/>
+                    <norms:isAllocated rdf:resource="#CorrectionAndAmendment_o"/>
+                    <norms:isAllocated rdf:resource="#Inspection_o"/>
+                    <norms:isAllocated rdf:resource="#Protection_r"/>
+                    <norms:isAllocated rdf:resource="#Suspension_r"/>
+                    <norms:isAllocated rdf:resource="#ProtectionOfSecrecy_r"/>
+                    <norms:isAllocated rdf:resource="#Notification_r"/>
+                    <norms:isAllocated rdf:resource="#Notification_o"/>
+                    <norms:isAllocated rdf:resource="#ProtectionOfSecrecy_o"/>
+                    <norms:isAllocated rdf:resource="#ProcessingWIthoutApproval_r"/>
+                    <norms:isAllocated rdf:resource="#Collection_o"/>
+                    <norms:isAllocated rdf:resource="#Copy_o"/>
+                    <norms:isAllocated rdf:resource="#AccessAndInspection_o"/>
+                    <norms:specializes rdf:resource="#LegalObject"/>
+                    <norms:isAllocated rdf:resource="#AccessAndInspection_c"/>
+                    <norms:isAllocated>
+                      <norms:Obligation rdf:ID="Processing_o">
+                        <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                        <norms:allocates rdf:resource="#Data"/>
+                      </norms:Obligation>
+                    </norms:isAllocated>
+                    <norms:isAllocated rdf:resource="#Processing_r"/>
+                    <norms:isAllocated rdf:resource="#ProcessingByStateAgency_o"/>
+                    <norms:isAllocated rdf:resource="#Deletion_r"/>
+                    <norms:isAllocated rdf:resource="#ProcessingWithoutApproval_o"/>
+                    <norms:isAllocated rdf:resource="#ProcessingByStateAgency_c"/>
+                    <norms:isAllocated rdf:resource="#Decision_p"/>
+                    <norms:isAllocated rdf:resource="#Deletion_o"/>
+                  </norms:LegalObject>
+                </norms:allocates>
+                <norms:isBeingHad rdf:resource="#NaturalPerson"/>
+                <norms:isElement rdf:resource="#Protection"/>
+              </norms:Right>
+            </norms:has>
+            <norms:has rdf:resource="#ProtectionOfSecrecy_r"/>
+            <norms:has rdf:resource="#Decision_r"/>
+            <norms:has rdf:resource="#Processing_o"/>
+            <norms:has rdf:resource="#Deletion_r"/>
+            <norms:specializes rdf:resource="#LegalSubject"/>
+            <norms:has rdf:resource="#ProcessingByStateAgency_o"/>
+            <norms:has rdf:resource="#ProcessingOfSensitiveData_o"/>
+            <norms:has rdf:resource="#Collection_o"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Физичко лице</rdfs:label>
+            <norms:has rdf:resource="#CorrectionAndAmendment_r"/>
+            <norms:has rdf:resource="#Export_o"/>
+            <norms:has rdf:resource="#Processing_r"/>
+            <norms:has rdf:resource="#Inspection_r"/>
+            <norms:has rdf:resource="#Copy_r"/>
+            <norms:has rdf:resource="#Suspension_r"/>
+            <norms:has rdf:resource="#Notification_r"/>
+            <norms:has rdf:resource="#ProcessingWithoutApproval_o"/>
+          </norms:LegalSubject>
+        </norms:isBeingHad>
+        <norms:isElement rdf:resource="#ProcessingOfSensitiveData"/>
+      </norms:Obligation>
+    </norms:isAllocated>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Нарочито осетљиви подаци о личности</rdfs:label>
+    <norms:specializes rdf:resource="#Data"/>                 </norms:LegalObject>
+                                                            </norms:allocates>
+                                                            <norms:isElement rdf:resource="#ProcessingOfSensitiveData"/>
+                                                            <norms:isBeingHad rdf:resource="#Handler"/>
+                                                          </norms:Right>
+                                                        </norms:has>
+                                                        <norms:has rdf:resource="#Processing_p"/>
+                                                        <norms:has rdf:resource="#Inspection_o"/>
+                                                        <norms:specializes rdf:resource="#LegalSubject"/>
+                                                        <norms:has rdf:resource="#MakingRecord_o"/>
+                                                        <norms:has rdf:resource="#Notification_o"/>
+                                                        <norms:has rdf:resource="#Protection_o"/>
+                                                        <norms:has rdf:resource="#Export_r"/>
+                                                        <norms:has rdf:resource="#CollectionFromStateAgency_r"/>
+                                                        <norms:has rdf:resource="#ProcessingWIthoutApproval_r"/>
+                                                        <norms:has rdf:resource="#AccessAndInspection_o"/>
+                                                        <norms:has rdf:resource="#Copy_o"/>
+                                                        <norms:has rdf:resource="#Deletion_o"/>
+                                                        <rdfs:label
+                                                         rdf:datatype=
+                                                        "http://www.w3.org/2001/XMLSchema#string"
+                                                        >Руковаоц</rdfs:label>
+                                                        <norms:has rdf:resource="#Collection_r"/>
+                                                        <norms:has rdf:resource="#Suspension_o"/>
+                                                      </norms:LegalSubject>
+                                                    </norms:isBeingHad>
+                                                    <norms:allocates rdf:resource="#Data"/>
+                                                  </norms:Obligation>
+                                                </norms:hasElement>
+                                                <norms:hasElement rdf:resource="#AccessAndInspection_c"/>
+                                                <norms:specializes rdf:resource="#LegalRelation"/>
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Приступ и увид</rdfs:label>
+                                                <norms:isRegulated rdf:resource="#art45"/>
+                                              </norms:LegalRelation>
+                                            </norms:regulates>
+                                            <norms:isPart rdf:resource="#Privacy"/>
+                                            <norms:effectiveOn
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                            >2008-10-23</norms:effectiveOn>
+                                            <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                          </norms:LegalNorm>
+                                        </norms:contains>
+                                        <norms:asXML rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#anyURI"
+                                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik</norms:asXML>
+                                        <norms:contains rdf:resource="#art8"/>
+                                        <norms:isEnacted rdf:resource="#ParliamentOfSerbia"/>
+                                        <norms:contains rdf:resource="#art22-it1"/>
+                                        <norms:contains rdf:resource="#art47"/>
+                                        <norms:contains rdf:resource="#art29"/>
+                                        <norms:contains rdf:resource="#art14-it2"/>
+                                        <norms:contains rdf:resource="#art21-it1"/>
+                                        <norms:contains rdf:resource="#art15"/>
+                                        <norms:contains rdf:resource="#art16-it3"/>
+                                        <norms:isPublished>
+                                          <norms:Gazette rdf:ID="Gazette97-08">
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >"Службени гласник РС", бр. 97/08</rdfs:label>
+                                            <norms:volume rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#int"
+                                            >2008</norms:volume>
+                                            <norms:publishes rdf:resource="#PrivacyLaw"/>
+                                            <norms:number rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#int"
+                                            >97</norms:number>
+                                          </norms:Gazette>
+                                        </norms:isPublished>
+                                        <norms:contains rdf:resource="#art12"/>
+                                        <norms:enactedOn rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#date"
+                                        >2008-10-23</norms:enactedOn>
+                                        <norms:publishedOn rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#date"
+                                        >2008-10-27</norms:publishedOn>
+                                        <norms:contains rdf:resource="#art46-it1"/>
+                                        <norms:contains rdf:resource="#art53"/>
+                                        <norms:contains rdf:resource="#art13"/>
+                                        <norms:contains rdf:resource="#art22-it2"/>
+                                        <norms:contains rdf:resource="#art16-it1"/>
+                                        <norms:contains rdf:resource="#art20"/>
+                                        <norms:contains rdf:resource="#art14-it1"/>
+                                        <norms:contains rdf:resource="#art22-it3"/>
+                                        <norms:contains rdf:resource="#art48"/>
+                                        <norms:isPromulgated rdf:resource="#PresidentOfSerbia"/>
+                                        <rdfs:label rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >Закон о заштити података о личности</rdfs:label>
+                                        <norms:promulgatedOn rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#date"
+                                        >2008-10-27</norms:promulgatedOn>
+                                        <norms:contains>
+                                          <norms:LegalNorm rdf:ID="art9">
+                                            <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                                            <norms:isPart rdf:resource="#Privacy"/>
+                                            <norms:formulats rdf:resource="#PrivacyLaw"/>
+                                            <norms:hasElement>
+                                              <norms:Exception rdf:ID="art9_ex">
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art9-it2-p1</norms:asXML>
+                                                <norms:isElement rdf:resource="#art9"/>
+                                              </norms:Exception>
+                                            </norms:hasElement>
+                                            <norms:hasElement>
+                                              <norms:CategoricalDisposition rdf:ID="art9_d">
+                                                <norms:isElement rdf:resource="#art9"/>
+                                                <norms:asXML rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art9-it1-p1</norms:asXML>
+                                              </norms:CategoricalDisposition>
+                                            </norms:hasElement>
+                                            <norms:effectiveOn
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                            >2008-10-23</norms:effectiveOn>
+                                            <norms:enteredIntoForceOn
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                            >2008-10-23</norms:enteredIntoForceOn>
+                                          </norms:LegalNorm>
+                                        </norms:contains>
+                                        <norms:contains rdf:resource="#art19"/>
+                                      </norms:Law>
+                                    </norms:formulats>
+                                    <norms:effectiveOn rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#date"
+                                    >2008-10-23</norms:effectiveOn>
+                                    <norms:enteredIntoForceOn
+                                     rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                                    >2008-10-23</norms:enteredIntoForceOn>
+                                    <norms:isPart rdf:resource="#Privacy"/>
+                                    <norms:regulates rdf:resource="#Processing"/>
+                                    <norms:hasElement>
+                                      <norms:Exception rdf:ID="art29_ex">
+                                        <norms:asXML rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#anyURI"
+                                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art29-it2-p1</norms:asXML>
+                                        <norms:isElement rdf:resource="#art29"/>
+                                      </norms:Exception>
+                                    </norms:hasElement>
+                                    <norms:hasElement>
+                                      <norms:CategoricalDisposition rdf:ID="art29_d">
+                                        <norms:isElement rdf:resource="#art29"/>
+                                        <norms:asXML rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#anyURI"
+                                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art29-it1-p1</norms:asXML>
+                                      </norms:CategoricalDisposition>
+                                    </norms:hasElement>
+                                  </norms:LegalNorm>
+                                </norms:hasPart>
+                                <norms:hasPart rdf:resource="#art15"/>
+                                <norms:hasPart rdf:resource="#art48"/>
+                                <norms:hasPart rdf:resource="#art22-it1"/>
+                                <norms:hasPart rdf:resource="#art16-it1"/>
+                                <norms:hasPart rdf:resource="#art19"/>
+                                <norms:hasPart rdf:resource="#art46-it1"/>
+                                <norms:isPart>
+                                  <norms:LegalBranch rdf:ID="CivilLaw">
+                                    <rdfs:label rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#string"
+                                    >Грађанско право</rdfs:label>
+                                    <norms:hasPart rdf:resource="#Privacy"/>
+                                    <norms:isPart>
+                                      <norms:LegalArea rdf:ID="PrivateLaw">
+                                        <norms:isPart>
+                                          <norms:LegalSystem rdf:ID="SerbianLegalSystem">
+                                            <norms:hasPart>
+                                              <norms:LegalArea rdf:ID="PublicLaw">
+                                                <norms:hasPart>
+                                                  <norms:LegalBranch rdf:ID="JudiciaryLaw">
+                                                    <norms:isPart rdf:resource="#PublicLaw"/>
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Судско право</rdfs:label>
+                                                  </norms:LegalBranch>
+                                                </norms:hasPart>
+                                                <norms:hasPart>
+                                                  <norms:LegalBranch rdf:ID="ExecutiveLaw">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Управно право</rdfs:label>
+                                                    <norms:isPart rdf:resource="#PublicLaw"/>
+                                                  </norms:LegalBranch>
+                                                </norms:hasPart>
+                                                <norms:hasPart>
+                                                  <norms:LegalBranch rdf:ID="CriminalLaw">
+                                                    <norms:isPart rdf:resource="#PublicLaw"/>
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Кривично право</rdfs:label>
+                                                  </norms:LegalBranch>
+                                                </norms:hasPart>
+                                                <norms:hasPart>
+                                                  <norms:LegalBranch rdf:ID="ConstitutionalLaw">
+                                                    <rdfs:label
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#string"
+                                                    >Уставно право</rdfs:label>
+                                                    <norms:isPart rdf:resource="#PublicLaw"/>
+                                                  </norms:LegalBranch>
+                                                </norms:hasPart>
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Јавно право</rdfs:label>
+                                                <norms:isPart rdf:resource="#SerbianLegalSystem"/>
+                                              </norms:LegalArea>
+                                            </norms:hasPart>
+                                            <norms:hasPart rdf:resource="#PrivateLaw"/>
+                                            <norms:hasPart>
+                                              <norms:LegalArea rdf:ID="NationalLaw">
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Национално право</rdfs:label>
+                                                <norms:isPart rdf:resource="#SerbianLegalSystem"/>
+                                              </norms:LegalArea>
+                                            </norms:hasPart>
+                                            <norms:hasPart>
+                                              <norms:LegalArea rdf:ID="MaterialLaw">
+                                                <norms:isPart rdf:resource="#SerbianLegalSystem"/>
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Материјално право</rdfs:label>
+                                              </norms:LegalArea>
+                                            </norms:hasPart>
+                                            <norms:hasPart>
+                                              <norms:LegalArea rdf:ID="InternationalLaw">
+                                                <norms:isPart rdf:resource="#SerbianLegalSystem"/>
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Међународно право</rdfs:label>
+                                              </norms:LegalArea>
+                                            </norms:hasPart>
+                                            <norms:hasPart>
+                                              <norms:LegalArea rdf:ID="FormalLaw">
+                                                <rdfs:label rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#string"
+                                                >Формално право</rdfs:label>
+                                                <norms:isPart rdf:resource="#SerbianLegalSystem"/>
+                                              </norms:LegalArea>
+                                            </norms:hasPart>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Правни систем Републике Србије</rdfs:label>
+                                          </norms:LegalSystem>
+                                        </norms:isPart>
+                                        <rdfs:label rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >Приватно право</rdfs:label>
+                                        <norms:hasPart>
+                                          <norms:LegalBranch rdf:ID="LabourLaw">
+                                            <norms:isPart rdf:resource="#PrivateLaw"/>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Радно право</rdfs:label>
+                                          </norms:LegalBranch>
+                                        </norms:hasPart>
+                                        <norms:hasPart>
+                                          <norms:LegalBranch rdf:ID="FamilyLaw">
+                                            <norms:isPart rdf:resource="#PrivateLaw"/>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Породично право</rdfs:label>
+                                          </norms:LegalBranch>
+                                        </norms:hasPart>
+                                        <norms:hasPart>
+                                          <norms:LegalBranch rdf:ID="CompanyLaw">
+                                            <norms:isPart rdf:resource="#PrivateLaw"/>
+                                            <rdfs:label rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#string"
+                                            >Привредно право</rdfs:label>
+                                          </norms:LegalBranch>
+                                        </norms:hasPart>
+                                        <norms:hasPart rdf:resource="#CivilLaw"/>
+                                      </norms:LegalArea>
+                                    </norms:isPart>
+                                  </norms:LegalBranch>
+                                </norms:isPart>
+                                <norms:hasPart rdf:resource="#art45"/>
+                                <norms:hasPart rdf:resource="#art14-it1"/>
+                                <norms:hasPart rdf:resource="#art47"/>
+                                <norms:hasPart rdf:resource="#art20"/>
+                                <norms:hasPart rdf:resource="#art22-it2"/>
+                                <norms:hasPart rdf:resource="#art22-it3"/>
+                                <norms:hasPart rdf:resource="#art14-it2"/>
+                                <norms:hasPart rdf:resource="#art8"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                                >Институција приватности</rdfs:label>
+                                <norms:hasPart rdf:resource="#art21-it1"/>
+                                <norms:hasPart rdf:resource="#art9"/>
+                                <norms:hasPart rdf:resource="#art13"/>
+                                <norms:hasPart rdf:resource="#art16-it3"/>
+                                <norms:hasPart rdf:resource="#art12"/>
+                                <norms:hasPart rdf:resource="#art53"/>
+                              </norms:LegalInstitution>
+                            </norms:isPart>
+                            <norms:formulats rdf:resource="#PrivacyLaw"/>
+                            <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                            >2008-10-23</norms:effectiveOn>
+                            <norms:regulates rdf:resource="#Copy"/>
+                            <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                          </norms:LegalNorm>
+                        </norms:isElement>
+                        <norms:isElement rdf:resource="#art19"/>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-p1</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt8-p1</norms:asXML>
+                      </norms:Exception>
+                    </norms:hasElement>
+                    <norms:hasElement>
+                      <norms:CategoricalDisposition rdf:ID="art20_d">
+                        <norms:isElement rdf:resource="#art20"/>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art20-it1-p2</norms:asXML>
+                        <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                        >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art20-it1-p1</norms:asXML>
+                      </norms:CategoricalDisposition>
+                    </norms:hasElement>
+                    <norms:isPart rdf:resource="#Privacy"/>
+                    <norms:implements rdf:resource="#ProtectionOfPrivacy"/>
+                    <norms:enteredIntoForceOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2008-10-23</norms:enteredIntoForceOn>
+                    <norms:regulates rdf:resource="#Inspection"/>
+                    <norms:effectiveOn rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                    >2008-10-23</norms:effectiveOn>
+                    <norms:formulats rdf:resource="#PrivacyLaw"/>
+                  </norms:LegalNorm>
+                </norms:isImplemented>
+                <norms:isImplemented rdf:resource="#art22-it1"/>
+                <norms:isImplemented rdf:resource="#art53"/>
+                <norms:isImplemented rdf:resource="#art15"/>
+                <norms:isImplemented rdf:resource="#art48"/>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Заштита права на приватност</rdfs:label>
+                <norms:isImplemented rdf:resource="#art21-it1"/>
+                <norms:isImplemented rdf:resource="#art22-it2"/>
+                <norms:isImplemented rdf:resource="#art46-it1"/>
+                <norms:isImplemented rdf:resource="#art14-it1"/>
+                <norms:isImplemented rdf:resource="#art13"/>
+                <norms:isImplemented rdf:resource="#art16-it3"/>
+                <norms:isImplemented rdf:resource="#art8"/>
+                <norms:isImplemented rdf:resource="#art29"/>
+                <norms:isImplemented rdf:resource="#art14-it2"/>
+                <norms:isImplemented rdf:resource="#art19"/>
+                <norms:isImplemented rdf:resource="#art22-it3"/>
+                <norms:isImplemented rdf:resource="#art47"/>
+                <norms:isImplemented rdf:resource="#art12"/>
+                <norms:isImplemented rdf:resource="#art45"/>
+                <norms:isImplemented rdf:resource="#art16-it1"/>
+                <norms:isImplemented rdf:resource="#art9"/>
+              </norms:Policy>
+            </norms:implements>
+            <norms:isPart rdf:resource="#Privacy"/>
+            <norms:hasElement>
+              <norms:CategoricalDisposition rdf:ID="art22-it1_d">
+                <norms:isElement rdf:resource="#art22-it1"/>
+                <norms:asXML rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                >urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it1-p1</norms:asXML>
+              </norms:CategoricalDisposition>
+            </norms:hasElement>
+            <norms:formulats rdf:resource="#PrivacyLaw"/>
+          </norms:LegalNorm>
+        </norms:isRegulated>
+        <norms:specializes rdf:resource="#Processing"/>
+        <norms:hasElement rdf:resource="#CorrectionAndAmendment_o"/>
+        <norms:hasElement rdf:resource="#CorrectionAndAmendment_r"/>
+      </norms:LegalRelation>
+    </norms:isElement>
+    <norms:allocates rdf:resource="#Data"/>
+    <norms:isBeingHad rdf:resource="#Handler"/>
+  </norms:Obligation>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.4, Build 579)  http://protege.stanford.edu -->

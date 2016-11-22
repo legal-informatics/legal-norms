@@ -1,0 +1,1073 @@
+#
+# This ontology is a part of the supplementary material that comes with the PhD thesis entitled 
+# “Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+#
+# For more information, see http://informatika.ftn.uns.ac.rs/legal
+# 
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix default:  <http://informatika.ftn.uns.ac.rs/legal/privacy.owl#> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix norms:   <http://informatika.ftn.uns.ac.rs/legal/norms.owl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+default:ProcessingByStateAgency_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:ProcessingByStateAgency .
+
+default:CorrectionAndAmendment_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:CorrectionAndAmendment .
+
+default:Collection_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Collection .
+
+default:art16-it1
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art16-it1_ex , default:art16-it1_dh , default:art16-it1_d , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:ProcessingOfSensitiveData .
+
+default:art22-it2
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art22-it2_d , default:art22-it2_dh ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Deletion .
+
+default:Registry
+      a       norms:LegalObject ;
+      rdfs:label "Регистар података"^^xsd:string ;
+      norms:generalizes default:CentralRegistry ;
+      norms:isAllocated default:MakingRecord_o , default:MakingRecord_c ;
+      norms:specializes default:LegalObject .
+
+default:art19_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt9-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt8-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt5-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt13-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt12-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt10-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt11-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt15-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt14-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art19-it1-pt1-p1"^^xsd:anyURI ;
+      norms:isElement default:art19 .
+
+default:CriminalLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Кривично право"^^xsd:string ;
+      norms:isPart default:PublicLaw .
+
+default:art22-it1
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art22-it1_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:CorrectionAndAmendment .
+
+default:art22-it3_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it3-p1"^^xsd:anyURI ;
+      norms:isElement default:art22-it3 .
+
+default:art29_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art29-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art29 .
+
+default:ProtectionOfPrivacy
+      a       norms:Policy ;
+      rdfs:label "Заштита права на приватност"^^xsd:string ;
+      norms:isImplemented default:art47 , default:art19 , default:art22-it3 , default:art12 , default:art53 , default:art16-it1 , default:art45 , default:art13 , default:art22-it2 , default:art16-it3 , default:art15 , default:art8 , default:art9 , default:art29 , default:art14-it1 , default:art22-it1 , default:art48 , default:art14-it2 , default:art20 , default:art46-it1 , default:art21-it1 .
+
+default:Export_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Export .
+
+default:Decision_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Decision .
+
+default:CollectionFromStateAgency_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:AuthorizedStateAgency ;
+      norms:isElement default:CollectionFromStateAgency .
+
+default:art19
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art19_ex , default:art19_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Notification .
+
+default:Notification_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Notification .
+
+default:ProcessingOfSensitiveData_r
+      a       norms:Right ;
+      norms:allocates default:SensitiveData ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:ProcessingOfSensitiveData .
+
+default:NationalLaw
+      a       norms:LegalArea ;
+      rdfs:label "Национално право"^^xsd:string ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:art9_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art9-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art9 .
+
+default:art46-it1_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art46-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art46-it1 .
+
+default:art22-it2_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art22-it2 .
+
+default:FamilyLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Породично право"^^xsd:string ;
+      norms:isPart default:PrivateLaw .
+
+default:Inspection_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Inspection .
+
+default:art48_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt10-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt8-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt11-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt5-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt14-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt12-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt9-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt13-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-pt2-p1"^^xsd:anyURI ;
+      norms:isElement default:art48 .
+
+default:Decision
+      a       norms:LegalRelation ;
+      rdfs:label "Одлучивање помоћу аутоматизоване обраде"^^xsd:string ;
+      norms:hasElement default:Decision_r , default:Decision_p ;
+      norms:isRegulated default:art8 ;
+      norms:specializes default:LegalRelation .
+
+default:AccessAndInspection_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:AccessAndInspection .
+
+default:art15_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art15 .
+
+default:Processing_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson .
+
+default:art53
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art53_d , default:art57_s , default:art53_ex ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Export .
+
+default:InternationalLaw
+      a       norms:LegalArea ;
+      rdfs:label "Међународно право"^^xsd:string ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:Protection
+      a       norms:LegalRelation ;
+      rdfs:label "Заштита"^^xsd:string ;
+      norms:hasElement default:Protection_r , default:Protection_o ;
+      norms:isRegulated default:art47 ;
+      norms:specializes default:LegalRelation .
+
+default:ConstitutionalLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Уставно право"^^xsd:string ;
+      norms:isPart default:PublicLaw .
+
+default:art29
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art29_d , default:art29_ex ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Processing .
+
+default:JudiciaryLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Судско право"^^xsd:string ;
+      norms:isPart default:PublicLaw .
+
+default:art48
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art48_d , default:art48_ex , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:MakingRecord .
+
+default:Deletion_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Deletion .
+
+default:art16-it1_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art16-it1 .
+
+default:ProtectionOfSecrecy_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:ProtectionOfSecrecy .
+
+default:Privacy
+      a       norms:LegalInstitution ;
+      rdfs:label "Институција приватности"^^xsd:string ;
+      norms:hasPart default:art19 , default:art47 , default:art22-it3 , default:art12 , default:art53 , default:art16-it1 , default:art45 , default:art13 , default:art16-it3 , default:art22-it2 , default:art8 , default:art15 , default:art9 , default:art29 , default:art14-it1 , default:art48 , default:art22-it1 , default:art14-it2 , default:art46-it1 , default:art20 , default:art21-it1 ;
+      norms:isPart default:CivilLaw .
+
+default:art46-it1
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art46-it1_d , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:ProtectionOfSecrecy .
+
+default:ProcessingWithoutApproval_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:ProcessingWithoutApproval .
+
+default:ProcessingOfSensitiveData
+      a       norms:LegalRelation ;
+      rdfs:label "Обрада нарочито осетљивих података"^^xsd:string ;
+      norms:hasElement default:ProcessingOfSensitiveData_o , default:ProcessingOfSensitiveData_r ;
+      norms:isRegulated default:art16-it1 , default:art16-it3 ;
+      norms:specializes default:Processing .
+
+default:Copy_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Copy .
+
+default:ParliamentOfSerbia
+      a       norms:LegalSubject ;
+      rdfs:label "Народна скупштина Републике Србије"^^xsd:string ;
+      norms:enacts default:Constitution , default:PrivacyLaw ;
+      norms:promulgates default:Constitution ;
+      norms:specializes default:StateAgency .
+
+default:ProcessingOfSensitiveData_o
+      a       norms:Obligation ;
+      norms:allocates default:SensitiveData ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:ProcessingOfSensitiveData .
+
+default:Deletion
+      a       norms:LegalRelation ;
+      rdfs:label "Брисање"^^xsd:string ;
+      norms:hasElement default:Deletion_r , default:Deletion_o ;
+      norms:isRegulated default:art22-it2 ;
+      norms:specializes default:Processing .
+
+default:LegalRelation
+      a       norms:LegalRelation ;
+      rdfs:label "Правни однос"^^xsd:string ;
+      norms:generalizes default:ProtectionOfSecrecy , default:MakingRecord , default:Decision , default:Notification , default:Export , default:Protection , default:Processing , default:AccessAndInspection ;
+      norms:hasElement default:Duty , default:Right .
+
+default:AuthorizedStateAgency
+      a       norms:LegalSubject ;
+      rdfs:label "Орган овлашћен за прикупљање података"^^xsd:string ;
+      norms:has default:CollectionFromStateAgency_o ;
+      norms:specializes default:StateAgency .
+
+default:art53_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art53-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art53 .
+
+default:art16-it3
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art16-it3_dh , default:art16-it3_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:ProcessingOfSensitiveData .
+
+default:MakingRecord_c
+      a       norms:Competence ;
+      norms:allocates default:Registry ;
+      norms:isBeingHad default:Commissioner ;
+      norms:isElement default:MakingRecord .
+
+default:LegalSubject
+      a       norms:LegalSubject ;
+      rdfs:label "Правни субјект"^^xsd:string ;
+      norms:generalizes default:Processor , default:Handler , default:NaturalPerson , default:LegalPerson , default:User ;
+      norms:has default:Duty , default:Decision_p , default:Right .
+
+default:Processing_p
+      a       norms:Prohibition ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Processing .
+
+default:Deletion_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Deletion .
+
+default:art12_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-pt2-p1"^^xsd:anyURI ;
+      norms:isElement default:art12 .
+
+default:art14-it2_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt5-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-pt4-p1"^^xsd:anyURI ;
+      norms:isElement default:art14-it2 .
+
+default:Notification
+      a       norms:LegalRelation ;
+      rdfs:label "Обавештавање о обради"^^xsd:string ;
+      norms:hasElement default:Notification_r , default:Notification_o ;
+      norms:isRegulated default:art19 , default:art15 ;
+      norms:specializes default:LegalRelation .
+
+default:CorrectionAndAmendment_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:CorrectionAndAmendment .
+
+default:Export
+      a       norms:LegalRelation ;
+      rdfs:label "Изношење из Републике Србије"^^xsd:string ;
+      norms:hasElement default:Export_o , default:Export_r ;
+      norms:isRegulated default:art53 ;
+      norms:specializes default:LegalRelation .
+
+default:LegalPerson
+      a       norms:LegalSubject ;
+      rdfs:label "Правно лице"^^xsd:string ;
+      norms:generalizes default:StateAgency ;
+      norms:specializes default:LegalSubject .
+
+default:Data
+      a       norms:LegalObject ;
+      rdfs:label "Подаци о личности"^^xsd:string ;
+      norms:generalizes default:SensitiveData ;
+      norms:isAllocated default:Notification_o , default:ProcessingByStateAgency_o , default:CorrectionAndAmendment_o , default:AccessAndInspection_c , default:Collection_o , default:Decision_p , default:Suspension_o , default:Processing_p , default:Deletion_r , default:Copy_r , default:Protection_o , default:Export_o , default:Export_r , default:Decision_r , default:CollectionFromStateAgency_o , default:Collection_r , default:CorrectionAndAmendment_r , default:Notification_r , default:Inspection_o , default:ProcessingWIthoutApproval_r , default:AccessAndInspection_o , default:ProtectionOfSecrecy_o , default:ProcessingByStateAgency_c , default:Processing_o , default:Suspension_r , default:Protection_r , default:Deletion_o , default:Processing_r , default:CollectionFromStateAgency_r , default:ProtectionOfSecrecy_r , default:ProcessingWithoutApproval_o , default:Copy_o , default:Inspection_r ;
+      norms:specializes default:LegalObject .
+
+default:LabourLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Радно право"^^xsd:string ;
+      norms:isPart default:PrivateLaw .
+
+default:art14-it2_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art14-it2 .
+
+default:NaturalPerson
+      a       norms:LegalSubject ;
+      rdfs:label "Физичко лице"^^xsd:string ;
+      norms:has default:Notification_r , default:ProcessingByStateAgency_o , default:ProcessingOfSensitiveData_o , default:Processing_o , default:Collection_o , default:Suspension_r , default:Protection_r , default:Deletion_r , default:Processing_r , default:Copy_r , default:Export_o , default:ProtectionOfSecrecy_r , default:Decision_r , default:CorrectionAndAmendment_r , default:ProcessingWithoutApproval_o , default:Inspection_r ;
+      norms:specializes default:LegalSubject .
+
+default:art16-it3_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it3-p1"^^xsd:anyURI ;
+      norms:isElement default:art16-it3 .
+
+default:art21-it1_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art21-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art21-it1 .
+
+default:User
+      a       norms:LegalSubject ;
+      rdfs:label "Корисник"^^xsd:string ;
+      norms:specializes default:LegalSubject .
+
+default:Processing_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Processing .
+
+default:Constitution
+      a       norms:Constitution ;
+      rdfs:label "Устав Републике Србије"^^xsd:string ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"^^xsd:anyURI ;
+      norms:enactedOn "2006-11-08"^^xsd:date ;
+      norms:isEnacted default:ParliamentOfSerbia ;
+      norms:isPromulgated default:ParliamentOfSerbia ;
+      norms:isPublished default:Gazette98-06 ;
+      norms:promulgatedOn "2006-11-08"^^xsd:date ;
+      norms:publishedOn "2006-11-10"^^xsd:date .
+
+default:Processor
+      a       norms:LegalSubject ;
+      rdfs:label "Обрађивач"^^xsd:string ;
+      norms:specializes default:LegalSubject .
+
+default:art22-it1_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art22-it1 .
+
+default:art12_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art12-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art12 .
+
+default:SerbianLegalSystem
+      a       norms:LegalSystem ;
+      rdfs:label "Правни систем Републике Србије"^^xsd:string ;
+      norms:hasPart default:NationalLaw , default:FormalLaw , default:MaterialLaw , default:PublicLaw , default:InternationalLaw , default:PrivateLaw .
+
+default:LegalObject
+      a       norms:LegalObject ;
+      rdfs:label "Правни објект"^^xsd:string ;
+      norms:generalizes default:Directory , default:Registry , default:Data ;
+      norms:isAllocated default:Duty , default:Right .
+
+default:art9_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art9-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art9 .
+
+default:Gazette97-08
+      a       norms:Gazette ;
+      rdfs:label "\"Службени гласник РС\", бр. 97/08"^^xsd:string ;
+      norms:number "97"^^xsd:int ;
+      norms:publishes default:PrivacyLaw ;
+      norms:volume "2008"^^xsd:int .
+
+default:art20
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art19_ex , default:art20_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Inspection .
+
+default:Inspection_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Inspection .
+
+default:Gazette35-09
+      a       norms:Gazette ;
+      rdfs:label "\"Службени гласник РС\", бр. 35/09"^^xsd:string ;
+      norms:number "35"^^xsd:int ;
+      norms:publishes default:Bylaw2 , default:Bylaw1 ;
+      norms:volume "2009"^^xsd:int .
+
+<http://informatika.ftn.uns.ac.rs/legal/privacy.owl>
+      a       owl:Ontology ;
+      owl:imports norms: .
+
+default:art15_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-p2"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt8-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it1-pt5-p1"^^xsd:anyURI ;
+      norms:isElement default:art15 .
+
+default:Bylaw1
+      a       norms:Bylaw ;
+      rdfs:label "Правилник о начину претходне провере радњи обраде података о личности"^^xsd:string ;
+      norms:asXML "urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"^^xsd:anyURI ;
+      norms:enactedOn "2009-04-14"^^xsd:date ;
+      norms:isEnacted default:Commissioner ;
+      norms:isPublished default:Gazette35-09 ;
+      norms:publishedOn "2009-05-12"^^xsd:date .
+
+default:ExecutiveLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Управно право"^^xsd:string ;
+      norms:isPart default:PublicLaw .
+
+default:art15_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art15-it3-p1"^^xsd:anyURI ;
+      norms:isElement default:art15 .
+
+default:Suspension_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Suspension .
+
+default:art45_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art45 .
+
+default:Collection
+      a       norms:LegalRelation ;
+      rdfs:label "Прикупљање"^^xsd:string ;
+      norms:generalizes default:Inspection , default:CollectionFromStateAgency ;
+      norms:hasElement default:Collection_r , default:Collection_o ;
+      norms:isRegulated default:art14-it2 ;
+      norms:specializes default:Processing .
+
+default:art20_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art20-it1-p2"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art20-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art20 .
+
+default:art29_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art29-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art29 .
+
+default:CorrectionAndAmendment
+      a       norms:LegalRelation ;
+      rdfs:label "Исправка и допуна"^^xsd:string ;
+      norms:hasElement default:CorrectionAndAmendment_o , default:CorrectionAndAmendment_r ;
+      norms:isRegulated default:art22-it1 ;
+      norms:specializes default:Processing .
+
+default:Copy
+      a       norms:LegalRelation ;
+      rdfs:label "Копирање"^^xsd:string ;
+      norms:hasElement default:Copy_r , default:Copy_o ;
+      norms:isRegulated default:art21-it1 ;
+      norms:specializes default:Processing .
+
+default:Copy_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Copy .
+
+default:CompanyLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Привредно право"^^xsd:string ;
+      norms:isPart default:PrivateLaw .
+
+default:CentralRegistry
+      a       norms:LegalObject ;
+      rdfs:label "Централни регистар података"^^xsd:string ;
+      norms:specializes default:Registry .
+
+default:Duty
+      a       norms:Duty ;
+      rdfs:label ""^^xsd:string ;
+      norms:allocates default:LegalObject ;
+      norms:isBeingHad default:LegalSubject ;
+      norms:isElement default:LegalRelation .
+
+default:ProcessingByStateAgency
+      a       norms:LegalRelation ;
+      rdfs:label "Обрада од стране органа власти"^^xsd:string ;
+      norms:hasElement default:ProcessingByStateAgency_o , default:ProcessingByStateAgency_c ;
+      norms:isRegulated default:art13 ;
+      norms:specializes default:Processing .
+
+default:CollectionFromStateAgency
+      a       norms:LegalRelation ;
+      rdfs:label "Прикупљање података од овлашћених органа управе"^^xsd:string ;
+      norms:hasElement default:CollectionFromStateAgency_r , default:CollectionFromStateAgency_o ;
+      norms:isRegulated default:art14-it1 ;
+      norms:specializes default:Collection .
+
+default:StateAgency
+      a       norms:LegalSubject ;
+      rdfs:label "Државни орган"^^xsd:string ;
+      norms:generalizes default:PresidentOfSerbia , default:ParliamentOfVojvodina , default:AuthorizedStateAgency , default:Commissioner , default:ParliamentOfSerbia ;
+      norms:has default:ProcessingByStateAgency_c ;
+      norms:specializes default:LegalPerson .
+
+default:PrivateLaw
+      a       norms:LegalArea ;
+      rdfs:label "Приватно право"^^xsd:string ;
+      norms:hasPart default:CivilLaw , default:LabourLaw , default:FamilyLaw , default:CompanyLaw ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:PresidentOfSerbia
+      a       norms:LegalSubject ;
+      rdfs:label "Председник Републике Србије"^^xsd:string ;
+      norms:promulgates default:PrivacyLaw ;
+      norms:specializes default:StateAgency .
+
+default:art47
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art47_d , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Protection .
+
+default:art19_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt8-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt9-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt5-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art23-it1-pt2-p1"^^xsd:anyURI ;
+      norms:isElement default:art19 , default:art20 , default:art21-it1 .
+
+default:ProcessingWIthoutApproval_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:ProcessingWithoutApproval .
+
+default:Bylaw2
+      a       norms:Bylaw ;
+      rdfs:label "Правилник о обрасцу легитимације овлашћеног лица за вршење надзора по Законо о заштити података о личности"^^xsd:string ;
+      norms:asXML "urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"^^xsd:anyURI ;
+      norms:enactedOn "2009-04-21"^^xsd:date ;
+      norms:isEnacted default:Commissioner ;
+      norms:isPublished default:Gazette35-09 ;
+      norms:publishedOn "2009-05-12"^^xsd:date .
+
+default:art22-it3_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it3-p2"^^xsd:anyURI ;
+      norms:isElement default:art22-it3 .
+
+default:art48_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art48-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art48 .
+
+default:art15
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art15_d , default:art15_dh , default:art57_s , default:art15_ex ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Notification .
+
+default:art53_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art53-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art53 .
+
+default:CivilLaw
+      a       norms:LegalBranch ;
+      rdfs:label "Грађанско право"^^xsd:string ;
+      norms:hasPart default:Privacy ;
+      norms:isPart default:PrivateLaw .
+
+default:Protection_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Protection .
+
+default:art47_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art47-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art47-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art47 .
+
+default:ParliamentOfVojvodina
+      a       norms:LegalSubject ;
+      rdfs:label "Скупштина АПВ"^^xsd:string ;
+      norms:specializes default:StateAgency .
+
+default:art16-it1_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it1-p2"^^xsd:anyURI ;
+      norms:isElement default:art16-it1 .
+
+default:FormalLaw
+      a       norms:LegalArea ;
+      rdfs:label "Формално право"^^xsd:string ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:art16-it3_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it2-p2"^^xsd:anyURI ;
+      norms:isElement default:art16-it3 .
+
+default:MaterialLaw
+      a       norms:LegalArea ;
+      rdfs:label "Материјално право"^^xsd:string ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:Gazette98-06
+      a       norms:Gazette ;
+      rdfs:label "\"Службени гласник РС\", бр. 98/06"^^xsd:string ;
+      norms:number "98"^^xsd:int ;
+      norms:publishes default:Constitution ;
+      norms:volume "2006"^^xsd:int .
+
+default:art45_d
+      a       norms:DiscretionaryDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art45-it1-pt4-p1"^^xsd:anyURI ;
+      norms:isElement default:art45 .
+
+default:art57_s
+      a       norms:CategoricalSanction ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art57-it1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art57-it3-p1"^^xsd:anyURI ;
+      norms:isElement default:art47 , default:art48 , default:art14-it2 , default:art12 , default:art53 , default:art46-it1 , default:art16-it1 , default:art13 , default:art15 .
+
+default:AccessAndInspection
+      a       norms:LegalRelation ;
+      rdfs:label "Приступ и увид"^^xsd:string ;
+      norms:hasElement default:AccessAndInspection_c , default:AccessAndInspection_o ;
+      norms:isRegulated default:art45 ;
+      norms:specializes default:LegalRelation .
+
+default:art22-it2_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art22-it2-pt5-p1"^^xsd:anyURI ;
+      norms:isElement default:art22-it2 .
+
+default:Notification_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Notification .
+
+default:SensitiveData
+      a       norms:LegalObject ;
+      rdfs:label "Нарочито осетљиви подаци о личности"^^xsd:string ;
+      norms:isAllocated default:ProcessingOfSensitiveData_o , default:ProcessingOfSensitiveData_r ;
+      norms:specializes default:Data .
+
+default:AccessAndInspection_c
+      a       norms:Competence ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Commissioner ;
+      norms:isElement default:AccessAndInspection .
+
+default:art12
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art12_dh , default:art12_d , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:ProcessingWithoutApproval .
+
+default:PrivacyLaw
+      a       norms:Law ;
+      rdfs:label "Закон о заштити података о личности"^^xsd:string ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"^^xsd:anyURI ;
+      norms:contains default:art19 , default:art47 , default:art22-it3 , default:art12 , default:art53 , default:art16-it1 , default:art45 , default:art13 , default:art22-it2 , default:art16-it3 , default:art8 , default:art15 , default:art9 , default:art29 , default:art14-it1 , default:art48 , default:art22-it1 , default:art14-it2 , default:art20 , default:art46-it1 , default:art21-it1 ;
+      norms:enactedOn "2008-10-23"^^xsd:date ;
+      norms:isEnacted default:ParliamentOfSerbia ;
+      norms:isPromulgated default:PresidentOfSerbia ;
+      norms:isPublished default:Gazette97-08 ;
+      norms:promulgatedOn "2008-10-27"^^xsd:date ;
+      norms:publishedOn "2008-10-27"^^xsd:date .
+
+default:Decision_p
+      a       norms:Prohibition ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:LegalSubject ;
+      norms:isElement default:Decision .
+
+default:art8_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt5-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt4-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt7-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt2-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt3-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt6-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt1-p1"^^xsd:anyURI , "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-pt8-p1"^^xsd:anyURI ;
+      norms:isElement default:art8 .
+
+default:art9
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art9_ex , default:art9_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy .
+
+default:art8_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art8-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art8 .
+
+default:art14-it1
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art14-it1_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:CollectionFromStateAgency .
+
+default:MakingRecord_o
+      a       norms:Obligation ;
+      norms:allocates default:Registry ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:MakingRecord .
+
+default:MakingRecord
+      a       norms:LegalRelation ;
+      rdfs:label "Евиденција о обради"^^xsd:string ;
+      norms:hasElement default:MakingRecord_o , default:MakingRecord_c ;
+      norms:isRegulated default:art48 ;
+      norms:specializes default:LegalRelation .
+
+default:Protection_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Protection .
+
+default:Export_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Export .
+
+default:Collection_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:Collection .
+
+default:Commissioner
+      a       norms:LegalSubject ;
+      rdfs:label "Повереник за информације од јавног значаја и заштиту података о личности"^^xsd:string ;
+      norms:enacts default:Bylaw2 , default:Bylaw1 ;
+      norms:has default:AccessAndInspection_c , default:ProtectionOfSecrecy_o , default:MakingRecord_c ;
+      norms:specializes default:StateAgency .
+
+default:PublicLaw
+      a       norms:LegalArea ;
+      rdfs:label "Јавно право"^^xsd:string ;
+      norms:hasPart default:CriminalLaw , default:JudiciaryLaw , default:ExecutiveLaw , default:ConstitutionalLaw ;
+      norms:isPart default:SerbianLegalSystem .
+
+default:Processing
+      a       norms:LegalRelation ;
+      rdfs:label "Обрада"^^xsd:string ;
+      norms:generalizes default:Copy , default:CorrectionAndAmendment , default:Suspension , default:Deletion , default:ProcessingByStateAgency , default:ProcessingOfSensitiveData , default:ProcessingWithoutApproval , default:Collection ;
+      norms:hasElement default:Processing_r , default:Processing_p ;
+      norms:isRegulated default:art29 ;
+      norms:specializes default:LegalRelation .
+
+default:Suspension
+      a       norms:LegalRelation ;
+      rdfs:label "Прекид и привремена обустава обраде"^^xsd:string ;
+      norms:hasElement default:Suspension_o , default:Suspension_r ;
+      norms:isRegulated default:art22-it3 ;
+      norms:specializes default:Processing .
+
+default:art22-it3
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art22-it3_d , default:art22-it3_dh ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Suspension .
+
+default:ProtectionOfSecrecy
+      a       norms:LegalRelation ;
+      rdfs:label "Заштита тајности"^^xsd:string ;
+      norms:hasElement default:ProtectionOfSecrecy_r , default:ProtectionOfSecrecy_o ;
+      norms:isRegulated default:art46-it1 ;
+      norms:specializes default:LegalRelation .
+
+default:Handler
+      a       norms:LegalSubject ;
+      rdfs:label "Руковаоц"^^xsd:string ;
+      norms:has default:Notification_o , default:CorrectionAndAmendment_o , default:ProcessingOfSensitiveData_r , default:Inspection_o , default:ProcessingWIthoutApproval_r , default:AccessAndInspection_o , default:Suspension_o , default:Processing_p , default:CollectionFromStateAgency_r , default:Deletion_o , default:MakingRecord_o , default:Protection_o , default:Export_r , default:Collection_r , default:Copy_o ;
+      norms:specializes default:LegalSubject .
+
+default:ProtectionOfSecrecy_o
+      a       norms:Obligation ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Commissioner ;
+      norms:isElement default:ProtectionOfSecrecy .
+
+default:art13_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art13-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art13 .
+
+default:ProcessingByStateAgency_c
+      a       norms:Competence ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:StateAgency ;
+      norms:isElement default:ProcessingByStateAgency .
+
+default:art45
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art45_d , default:art45_ex ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:AccessAndInspection .
+
+default:art13
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art13_d , default:art57_s , default:art13_dh ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:ProcessingByStateAgency .
+
+default:ProcessingWithoutApproval
+      a       norms:LegalRelation ;
+      rdfs:label "Обрада без пристанка"^^xsd:string ;
+      norms:hasElement default:ProcessingWIthoutApproval_r , default:ProcessingWithoutApproval_o ;
+      norms:isRegulated default:art12 ;
+      norms:specializes default:Processing .
+
+default:art8
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art8_dh , default:art8_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Decision .
+
+default:Suspension_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:NaturalPerson ;
+      norms:isElement default:Suspension .
+
+default:Right
+      a       norms:Right ;
+      norms:allocates default:LegalObject ;
+      norms:isBeingHad default:LegalSubject ;
+      norms:isElement default:LegalRelation .
+
+default:art16-it1_ex
+      a       norms:Exception ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art16-it2-p1"^^xsd:anyURI ;
+      norms:isElement default:art16-it1 .
+
+default:CollectionFromStateAgency_r
+      a       norms:Right ;
+      norms:allocates default:Data ;
+      norms:isBeingHad default:Handler ;
+      norms:isElement default:CollectionFromStateAgency .
+
+default:art14-it2
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art14-it2_d , default:art14-it2_dh , default:art57_s ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Collection .
+
+default:Inspection
+      a       norms:LegalRelation ;
+      rdfs:label "Увид"^^xsd:string ;
+      norms:hasElement default:Inspection_o , default:Inspection_r ;
+      norms:isRegulated default:art20 ;
+      norms:specializes default:Collection .
+
+default:Directory
+      a       norms:LegalObject ;
+      rdfs:label "Збирка података"^^xsd:string ;
+      norms:specializes default:LegalObject .
+
+default:art14-it1_d
+      a       norms:CategoricalDisposition ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art14-it1-p1"^^xsd:anyURI ;
+      norms:isElement default:art14-it1 .
+
+default:art21-it1
+      a       norms:LegalNorm ;
+      norms:effectiveOn "2008-10-23"^^xsd:date ;
+      norms:enteredIntoForceOn
+              "2008-10-23"^^xsd:date ;
+      norms:formulats default:PrivacyLaw ;
+      norms:hasElement default:art19_ex , default:art21-it1_d ;
+      norms:implements default:ProtectionOfPrivacy ;
+      norms:isPart default:Privacy ;
+      norms:regulates default:Copy .
+
+default:art13_dh
+      a       norms:DispositionHypothesis ;
+      norms:asXML "urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#art13-it1-p2"^^xsd:anyURI ;
+      norms:isElement default:art13 .

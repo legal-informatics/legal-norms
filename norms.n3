@@ -1,0 +1,804 @@
+#
+# This ontology is a part of the supplementary material that comes with the PhD thesis entitled 
+# “Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+#
+# For more information, see http://informatika.ftn.uns.ac.rs/legal
+# 
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix default:  <http://informatika.ftn.uns.ac.rs/legal/norms.owl#> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix log:     <http://www.w3.org/2000/10/swap/log#> .
+
+default:Obligation
+      a       owl:Class ;
+      rdfs:label "Дужност"^^xsd:string ;
+      rdfs:subClassOf default:Duty ;
+      owl:disjointWith default:Competence , default:Prohibition .
+
+default:publishedOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:label "Објављује се"^^xsd:string ;
+      rdfs:range xsd:date .
+
+default:isElement
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:NormElement default:RelationElement)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (default:LegalRelation default:LegalNorm)
+              ] ;
+      owl:inverseOf default:hasElement .
+
+default:ProhibitiveNorm
+      a       owl:Class ;
+      rdfs:comment "Prohibitive legal norms determine prohibitions."^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:Prohibition
+                                    ]
+                          ])
+              ] .
+
+default:Case
+      a       owl:Class ;
+      rdfs:label "Пресуда"^^xsd:string ;
+      rdfs:subClassOf default:MentalAct ;
+      owl:disjointWith default:ExpertOpinion , default:Gazette , default:LegalAct .
+
+default:isRepealed
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:repeals .
+
+default:RelationElement
+      a       owl:Class ;
+      rdfs:label "Елемент правног односа"^^xsd:string .
+
+default:enteredIntoForceOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range xsd:date .
+
+[]    a       owl:Class ;
+      owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                  owl:onProperty default:hasElement ;
+                  owl:someValuesFrom
+                          [ a       owl:Class ;
+                            owl:unionOf (default:CategoricalDisposition default:AlternativeDisposition default:DiscretionaryDisposition)
+                          ]
+                ]) .
+
+default:CategoricalDisposition
+      a       owl:Class ;
+      rdfs:comment ""^^xsd:string ;
+      rdfs:label "Категорична диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeDisposition ;
+      owl:disjointWith default:AlternativeDisposition , default:DiscretionaryDisposition .
+
+default:Subject
+      a       owl:Class ;
+      rdfs:label "Субјект"^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:LegalFact , default:NormElement , default:Object , default:ClassificationElement , default:Policy , default:SocialRelation .
+
+default:LegalFact
+      a       owl:Class ;
+      rdfs:comment "Правна чињеница је чињеница која је предвиђена у претпоставци условним правних норми, па на основу којих настају, одн. престају правни односи. У теорији постоји велики број класификација правних чињеница, Тако се оне деле на догађаје и људске радње."^^xsd:string ;
+      rdfs:label "Правна чињеница"^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:NormElement , default:Object , default:ClassificationElement , default:Policy , default:Subject .
+
+default:MentalAct
+      a       owl:Class ;
+      rdfs:label "Ментални акт"^^xsd:string ;
+      rdfs:subClassOf default:Act .
+
+default:type
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range xsd:string .
+
+default:enactedOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:label "Доноси се"^^xsd:string ;
+      rdfs:range xsd:date .
+
+default:EntitlingNorm
+      a       owl:Class ;
+      rdfs:comment "Entitling legal norms determine entitlements of the legal subjects."^^xsd:string ;
+      rdfs:label "Entitling norm"^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:Right
+                                    ]
+                          ])
+              ] .
+
+default:has
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalSubject ;
+      rdfs:range default:RelationElement ;
+      owl:inverseOf default:isBeingHad .
+
+default:promulgates
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalSubject ;
+      rdfs:range default:LegalAct ;
+      owl:inverseOf default:isPromulgated .
+
+default:volume
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:Gazette ;
+      rdfs:range xsd:int .
+
+default:Act
+      a       owl:Class ;
+      rdfs:comment "Људске радње јесу оне телесне или психичке радње човека које су извршене вољно и свесно, тј. које човек сам изазива. Људске радње се деле на две главне групе: правне акте и остале радње."^^xsd:string ;
+      rdfs:label "Акт"^^xsd:string .
+
+default:isRegulated
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:SocialRelation ;
+      rdfs:range default:SocialNorm ;
+      owl:inverseOf default:regulates .
+
+default:ImperativeSanction
+      a       owl:Class ;
+      rdfs:label "Императивна санкција"^^xsd:string ;
+      rdfs:subClassOf default:Sanction ;
+      owl:disjointWith default:DispositiveSanction .
+
+default:PermanentPolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:TemporaryPolicy .
+
+default:Exception
+      a       owl:Class ;
+      rdfs:comment "Да ли је изузетак заиста елемент правног односа?"^^xsd:string ;
+      rdfs:label "Изузетак"^^xsd:string ;
+      rdfs:subClassOf default:NormElement ;
+      owl:disjointWith default:Sanction , default:SanctionHypothesis , default:DispositionHypothesis , default:Disposition .
+
+default:signer
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range xsd:string .
+
+default:SpecialPolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:BasicPolicy .
+
+default:effectiveOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:label "Примењује се"^^xsd:string ;
+      rdfs:range xsd:date .
+
+default:number
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:Gazette ;
+      rdfs:range xsd:int .
+
+default:SanctionHypothesis
+      a       owl:Class ;
+      rdfs:label "Претпоставка санкције"^^xsd:string ;
+      rdfs:subClassOf default:NormElement ;
+      owl:disjointWith default:Exception , default:Sanction , default:DispositionHypothesis , default:Disposition .
+
+default:NormOfCompetence
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:Competence
+                                    ]
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:hasElement ;
+                            owl:someValuesFrom default:DiscretionaryDisposition
+                          ])
+              ] .
+
+default:isApplied
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:Case ;
+      owl:inverseOf default:applies .
+
+default:PeremptoryNorm
+      a       owl:Class ;
+      rdfs:comment "Peremptory (mandatory) legal norms are formulated as imperatives, Legal subjects can not behave in a different way."^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:hasElement ;
+                            owl:someValuesFrom
+                                    [ a       owl:Class ;
+                                      owl:unionOf (default:CategoricalDisposition default:AlternativeDisposition default:DiscretionaryDisposition)
+                                    ]
+                          ])
+              ] .
+
+default:InjunctiveNorm
+      a       owl:Class ;
+      rdfs:comment "Injunctive legal norms determine duties of the legal subjects."^^xsd:string ;
+      rdfs:label "Injunctive imposing"^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:Duty
+                                    ]
+                          ])
+              ] .
+
+default:regulates
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:SocialNorm ;
+      rdfs:range default:SocialRelation ;
+      owl:inverseOf default:isRegulated .
+
+default:Statute
+      a       owl:Class ;
+      rdfs:label "Статут"^^xsd:string ;
+      rdfs:subClassOf default:Bylaw ;
+      owl:disjointWith default:Decision .
+
+default:Gazette
+      a       owl:Class ;
+      rdfs:label "Службени гласник"^^xsd:string ;
+      rdfs:subClassOf default:MentalAct ;
+      owl:disjointWith default:ExpertOpinion , default:LegalAct , default:Case .
+
+default:allocates
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:RelationElement ;
+      rdfs:range default:LegalObject ;
+      owl:inverseOf default:isAllocated .
+
+default:BasicPolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:SpecialPolicy .
+
+default:isBeingHad
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:RelationElement ;
+      rdfs:range default:LegalSubject ;
+      owl:inverseOf default:has .
+
+default:Bylaw
+      a       owl:Class ;
+      rdfs:label "Подзаконски правни акт"^^xsd:string ;
+      rdfs:subClassOf default:LegalAct ;
+      owl:disjointWith default:Constitution , default:Law .
+
+default:specializes
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:SocialRelation default:Subject default:Object)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (default:SocialRelation default:Subject default:Object)
+              ] ;
+      owl:inverseOf default:generalizes .
+
+default:publishes
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Gazette ;
+      rdfs:range default:LegalAct ;
+      owl:inverseOf default:isPublished .
+
+default:isPart
+      a       owl:TransitiveProperty , owl:ObjectProperty ;
+      rdfs:domain default:ClassificationElement ;
+      rdfs:range default:ClassificationElement ;
+      owl:inverseOf default:hasPart .
+
+default:isCreated
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:creates .
+
+default:UnconditionalNorm
+      a       owl:Class ;
+      rdfs:comment ""^^xsd:string ;
+      rdfs:label "CategoricalNorm"^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Class ;
+                            owl:complementOf
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:DispositionHypothesis
+                                    ]
+                          ])
+              ] .
+
+default:hasActor
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Act ;
+      rdfs:range default:Subject ;
+      owl:inverseOf default:isActor .
+
+default:enacts
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalSubject ;
+      rdfs:range default:LegalAct ;
+      owl:inverseOf default:isEnacted .
+
+default:formulats
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:LegalAct ;
+      owl:inverseOf default:contains .
+
+default:applies
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Case ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:isApplied .
+
+default:isInterpreted
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:ExpertOpinion ;
+      owl:inverseOf default:interprets .
+
+default:contains
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:comment "formulates"^^xsd:string ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:formulats .
+
+default:LegalAct
+      a       owl:Class ;
+      rdfs:comment ""^^xsd:string ;
+      rdfs:label "Општи правни акт"^^xsd:string ;
+      rdfs:subClassOf default:LegalFact , default:MentalAct ;
+      owl:disjointWith default:ExpertOpinion , default:Gazette , default:Case .
+
+default:CategoricalSanction
+      a       owl:Class ;
+      rdfs:label "Категорична санкција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeSanction ;
+      owl:disjointWith default:AlternativeSanction , default:DiscretionarySanction .
+
+default:LegalArea
+      a       owl:Class ;
+      rdfs:comment "Правна област је већа целина у коју се групишу правне гране: јавно и приватно право, материјално и формално право и унутрашње и међународно право."^^xsd:string ;
+      rdfs:label "Правна област"^^xsd:string ;
+      rdfs:subClassOf default:ClassificationElement ;
+      owl:disjointWith default:LegalInstitution , default:LegalNorm , default:LegalBranch , default:LegalSystem .
+
+default:ImperativeDisposition
+      a       owl:Class ;
+      rdfs:label "Императивна диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:Disposition ;
+      owl:disjointWith default:DispositiveDisposition .
+
+default:isImplemented
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:Policy ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:implements .
+
+default:Law
+      a       owl:Class ;
+      rdfs:label "Закон"^^xsd:string ;
+      rdfs:subClassOf default:LegalAct ;
+      owl:disjointWith default:Bylaw , default:Constitution .
+
+default:implements
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:Policy ;
+      owl:inverseOf default:isImplemented .
+
+default:isPromulgated
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range default:LegalSubject ;
+      owl:inverseOf default:promulgates .
+
+default:Disposition
+      a       owl:Class ;
+      rdfs:comment "Диспозиција је заповест о понашању људи, заповест једне воље упућена другој вољи. Диспозиција је примарно правило понашања. Постоје и диспозиције са мање или више одређеним појмовима и принудне диспозиције. Принудне (императивне) диспозиције су диспозиције које садрже правила понашања која су обавезна за односне субјекте."^^xsd:string ;
+      rdfs:label "Диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:NormElement ;
+      owl:disjointWith default:Exception , default:Sanction , default:SanctionHypothesis , default:DispositionHypothesis .
+
+default:asXML
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:NormElement default:Policy default:Subject default:Object default:SocialRelation default:MentalAct)
+              ] ;
+      rdfs:range xsd:anyURI .
+
+default:LegalRelation
+      a       owl:Class ;
+      rdfs:comment "Узећи у обзир да су права и обавезе елементи правних односа, а субјекти права и обавеза својства права и обавеза, опште правне норме регулишу класу правних односа, а посредно класе правних субјеката."^^xsd:string ;
+      rdfs:label "Правни однос"^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:onProperty default:isRegulated ;
+                            owl:someValuesFrom default:LegalNorm
+                          ] default:SocialRelation)
+              ] .
+
+default:Duty
+      a       owl:Class ;
+      rdfs:label "Обавеза"^^xsd:string ;
+      rdfs:subClassOf default:RelationElement .
+
+default:Decision
+      a       owl:Class ;
+      rdfs:label "Одлука"^^xsd:string ;
+      rdfs:subClassOf default:Bylaw ;
+      owl:disjointWith default:Statute .
+
+default:generalizes
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:SocialRelation default:Subject default:Object)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (default:SocialRelation default:Subject default:Object)
+              ] ;
+      owl:inverseOf default:specializes .
+
+default:ConcretePolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:AbstractPolicy .
+
+default:
+      a       owl:Ontology .
+
+default:isEnacted
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range default:LegalSubject ;
+      owl:inverseOf default:enacts .
+
+default:hasElement
+      a       owl:ObjectProperty ;
+      rdfs:comment "isComponent"^^xsd:string ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:LegalNorm default:LegalRelation)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (default:NormElement default:RelationElement)
+              ] ;
+      owl:inverseOf default:isElement .
+
+default:ConditionalNorm
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:hasElement ;
+                            owl:someValuesFrom default:DispositionHypothesis
+                          ])
+              ] .
+
+default:isPublished
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:range default:Gazette ;
+      owl:inverseOf default:publishes .
+
+default:Sanction
+      a       owl:Class ;
+      rdfs:comment "Санкције могу да буду и награђујуће. То сам занемарио у моделу. Санкција је део правне норме који јој даје правни карактер, тј. који садржи пропис о понашању како субјекта који је прекршио диспозицију тако и државног органа који је опзван да на прекршиоца примени одговарајућу насилну меру због тог прекршаја. Свака санкција је правило понашања државног органа што значи да је и сама правна норма. Ово сам занемарио у моделу. У моделу подразумевам да је свака санкција санкција државног органа."^^xsd:string ;
+      rdfs:label "Санкција"^^xsd:string ;
+      rdfs:subClassOf default:NormElement ;
+      owl:disjointWith default:Exception , default:SanctionHypothesis , default:DispositionHypothesis , default:Disposition .
+
+default:ProvisionalNorm
+      a       owl:Class ;
+      rdfs:comment "Provisional (non-mandatory) legal norms contain two rules – first enables legal subjects to arrange their rights and duties, Second will be used if they do not arrange."^^xsd:string ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:hasElement ;
+                            owl:someValuesFrom default:DispositiveDisposition
+                          ])
+              ] .
+
+default:repeals
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:isRepealed .
+
+default:NormElement
+      a       owl:Class ;
+      rdfs:label "Елемент правне норме"^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:LegalFact , default:Object , default:ClassificationElement , default:Policy , default:SocialRelation , default:Subject .
+
+default:Object
+      a       owl:Class ;
+      rdfs:label "Објект"^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:LegalFact , default:NormElement , default:ClassificationElement , default:Policy , default:SocialRelation , default:Subject .
+
+default:LegalSystem
+      a       owl:Class ;
+      rdfs:comment "Правни систем је скуп правних норми које су уређене међусобним односима"^^xsd:string ;
+      rdfs:label "Правни систем"^^xsd:string ;
+      rdfs:subClassOf default:ClassificationElement ;
+      owl:disjointWith default:LegalInstitution , default:LegalNorm , default:LegalBranch , default:LegalArea .
+
+default:DispositionHypothesis
+      a       owl:Class ;
+      rdfs:comment "Претпоставка диспозиције опште правне норме описује чињенице које треба да наступе, док претпоставка дисозиције појединачне правне норменаводе те исте чињенице када су оне већ наступиле, да би за субјекта наступила обавеза да поступа по диспозицији"^^xsd:string ;
+      rdfs:label "Претпоставка диспозиције"^^xsd:string ;
+      rdfs:subClassOf default:NormElement ;
+      owl:disjointWith default:Exception , default:Sanction , default:SanctionHypothesis , default:Disposition .
+
+default:isActor
+      a       owl:ObjectProperty ;
+      rdfs:domain default:Subject ;
+      rdfs:range default:Act ;
+      owl:inverseOf default:hasActor .
+
+default:hasPart
+      a       owl:TransitiveProperty , owl:ObjectProperty ;
+      rdfs:comment "isElement"^^xsd:string ;
+      rdfs:domain default:ClassificationElement ;
+      rdfs:range default:ClassificationElement ;
+      owl:inverseOf default:isPart .
+
+default:interprets
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:ExpertOpinion ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:isInterpreted .
+
+default:LegalInstitution
+      a       owl:Class ;
+      rdfs:comment "Правна установа је скуп свих правних норми које се односе на један исти друштвени однос или њихову мању групу, а које се заснивају на истим основним начелима, тј. које чине саставни део неке више целине. Установа има ужих и нижих, као и ширих и виших."^^xsd:string ;
+      rdfs:label "Правна институција"^^xsd:string ;
+      rdfs:subClassOf default:ClassificationElement ;
+      owl:disjointWith default:LegalNorm , default:LegalBranch , default:LegalSystem , default:LegalArea .
+
+default:NormOfConduct
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:hasElement ;
+                            owl:someValuesFrom
+                                    [ a       owl:Class ;
+                                      owl:unionOf (default:CategoricalDisposition default:AlternativeDisposition default:DispositiveDisposition)
+                                    ]
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom
+                                              [ a       owl:Class ;
+                                                owl:unionOf (default:Right default:Duty)
+                                              ]
+                                    ]
+                          ])
+              ] .
+
+default:DiscretionarySanction
+      a       owl:Class ;
+      rdfs:label "Дискрециона санкција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeSanction ;
+      owl:disjointWith default:AlternativeSanction , default:CategoricalSanction .
+
+default:Constitution
+      a       owl:Class ;
+      rdfs:label "Устав"^^xsd:string ;
+      rdfs:subClassOf default:LegalAct ;
+      owl:disjointWith default:Bylaw , default:Law .
+
+default:AbstractPolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:ConcretePolicy .
+
+default:ExpertOpinion
+      a       owl:Class ;
+      rdfs:label "Правно мишљење"^^xsd:string ;
+      rdfs:subClassOf default:MentalAct ;
+      owl:disjointWith default:Gazette , default:LegalAct , default:Case .
+
+default:SocialNorm
+      a       owl:Class ;
+      rdfs:label "Друштвена норма"^^xsd:string ;
+      owl:disjointWith default:LegalFact , default:NormElement , default:Object , default:Policy , default:SocialRelation , default:Subject .
+
+default:SocialRelation
+      a       owl:Class ;
+      rdfs:label "Друштвени однос"^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:NormElement , default:Object , default:ClassificationElement , default:Policy , default:Subject .
+
+default:LegalSubject
+      a       owl:Class ;
+      rdfs:label "Правни субјект"^^xsd:string ;
+      rdfs:subClassOf default:Subject ;
+      owl:disjointWith default:LegalObject .
+
+default:creates
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range default:LegalNorm ;
+      owl:inverseOf default:isCreated .
+
+default:Policy
+      a       owl:Class ;
+      rdfs:comment "Врсте циљева сам преузео из Пајванчић М., Правно нормирање"^^xsd:string ;
+      rdfs:label "Друштвена политика, тј. циљ који норма треба да оствари."^^xsd:string ;
+      owl:disjointWith default:SocialNorm , default:LegalFact , default:NormElement , default:Object , default:ClassificationElement , default:SocialRelation , default:Subject .
+
+default:LegalObject
+      a       owl:Class ;
+      rdfs:label "Правни објект"^^xsd:string ;
+      rdfs:subClassOf default:Object ;
+      owl:disjointWith default:LegalSubject .
+
+default:Right
+      a       owl:Class ;
+      rdfs:label "Право"^^xsd:string ;
+      rdfs:subClassOf default:RelationElement .
+
+owl:Thing
+      rdfs:label "Ствар"^^xsd:string .
+
+default:asPlainText
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (default:NormElement default:Policy default:Subject default:Object default:SocialRelation default:MentalAct)
+              ] ;
+      rdfs:range xsd:string .
+
+default:DispositiveDisposition
+      a       owl:Class ;
+      rdfs:comment ""^^xsd:string ;
+      rdfs:label "Диспозитивна диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:Disposition ;
+      owl:disjointWith default:ImperativeDisposition .
+
+default:DispositiveSanction
+      a       owl:Class ;
+      rdfs:label "Диспозитивна санкција"^^xsd:string ;
+      rdfs:subClassOf default:Sanction ;
+      owl:disjointWith default:ImperativeSanction .
+
+default:LegalBranch
+      a       owl:Class ;
+      rdfs:comment "Правна грана је скуп више правних установа које регулишу исту област друштвених односа по истим начелима. Нпр. грађанко право, кривично право, итд."^^xsd:string ;
+      rdfs:label "Правна грана"^^xsd:string ;
+      rdfs:subClassOf default:ClassificationElement ;
+      owl:disjointWith default:LegalInstitution , default:LegalNorm , default:LegalSystem , default:LegalArea .
+
+default:AlternativeSanction
+      a       owl:Class ;
+      rdfs:label "Алтернативна санкција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeSanction ;
+      owl:disjointWith default:DiscretionarySanction , default:CategoricalSanction .
+
+default:promulgatedOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalAct ;
+      rdfs:label "Проглашава се"^^xsd:string ;
+      rdfs:range xsd:date .
+
+default:DiscretionaryDisposition
+      a       owl:Class ;
+      rdfs:comment "Дискреционом диспозицијом се државном органу ставља одређена слобода, могућност да поступи у одређеним границама. Повезати дискрециону диспозицију са надлежношћу."^^xsd:string ;
+      rdfs:label "Дискрециона диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeDisposition ;
+      owl:disjointWith default:AlternativeDisposition , default:CategoricalDisposition .
+
+default:isAllocated
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain default:LegalObject ;
+      rdfs:range default:RelationElement ;
+      owl:inverseOf default:allocates .
+
+default:Prohibition
+      a       owl:Class ;
+      rdfs:label "Забрана"^^xsd:string ;
+      rdfs:subClassOf default:Duty ;
+      owl:disjointWith default:Competence , default:Obligation .
+
+default:ObligatoryNorm
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:LegalNorm [ a       owl:Restriction ;
+                            owl:onProperty default:regulates ;
+                            owl:someValuesFrom
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty default:hasElement ;
+                                      owl:someValuesFrom default:Obligation
+                                    ]
+                          ])
+              ] .
+
+default:ClassificationElement
+      a       owl:Class ;
+      owl:disjointWith default:LegalFact , default:NormElement , default:Object , default:Policy , default:SocialRelation , default:Subject .
+
+default:Competence
+      a       owl:Class ;
+      rdfs:label "Надлежност"^^xsd:string ;
+      rdfs:subClassOf default:Duty , default:Right ;
+      owl:disjointWith default:Obligation , default:Prohibition .
+
+default:LegalNorm
+      a       owl:Class ;
+      rdfs:comment "Да ли норма садржи бар једну диспозицију и бар једну санкцију. Може ли постојати улов за примену одговарајуће санкције (правна лице, предузетници, одговорна лица)?"^^xsd:string , "Важење правних норми у простору и времену. Време сам решио, ступа на снагу, ставља се ван снаге, ретроактивна примена правних норми. Просторно важење правних норми зависи од правног субјекта који их је донео. Персонално важење правних норми се односи на сва правна лица која се налазе на територији, мада могу да важе и за неки подскуп правних лица. Постоје и изузетци, нпр. дипломате."^^xsd:string ;
+      rdfs:label "Правна норма"^^xsd:string ;
+      rdfs:subClassOf default:SocialNorm , default:ClassificationElement ;
+      owl:disjointWith default:LegalInstitution , default:LegalBranch , default:LegalSystem , default:LegalArea .
+
+default:repealedOn
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain default:LegalNorm ;
+      rdfs:range xsd:date .
+
+default:AlternativeDisposition
+      a       owl:Class ;
+      rdfs:label "Алтернативна диспозиција"^^xsd:string ;
+      rdfs:subClassOf default:ImperativeDisposition ;
+      owl:disjointWith default:DiscretionaryDisposition , default:CategoricalDisposition .
+
+default:TemporaryPolicy
+      a       owl:Class ;
+      rdfs:subClassOf default:Policy ;
+      owl:disjointWith default:PermanentPolicy .
